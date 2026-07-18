@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Onyinyechi N. Nwoke |
+| **LinkedIn** | [Cloud DevOps Engineer ](https://www.linkedin.com/in/nwoke-onyinye/) |
+| **Location** | Lagos, Nigeria |
+| **Background** | Cloud, DevOps & Procurement |
+| **Goal** | Use cloud and DevOps technologies to automate supply chain processes and improve operational efficiency |
 
 ---
 
@@ -130,9 +130,9 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | —https://www.linkedin.com/posts/nwoke-onyinye_devops-cloudengineering-networking-share-7440083379083010049-cVXi/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7440083382333739008&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | — https://www.linkedin.com/posts/nwoke-onyinye_devops-cloudengineering-networking-share-7440083379083010049-cVXi/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7440083382333739008&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c|
+| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending |https://www.linkedin.com/posts/nwoke-onyinye_join-the-dmi-devops-micro-internship-share-7478882535759036417-Veu_/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7478882538611113986&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c — | — https://medium.com/@onyinyenwoke/i-didnt-change-careers-i-expanded-one-my-journey-from-procurement-to-tech-2a16248724af|
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
