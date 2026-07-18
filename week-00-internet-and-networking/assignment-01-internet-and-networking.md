@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+A protocol is a set of rules that devices follow to communicate with each other over a network. The real-life example helped me understand that, just like people need common rules to communicate, computers also need protocols to exchange information correctly.
 
 ---
 
@@ -59,7 +59,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user in any part of the world visits the EpicReads website hosted in Finland, the information is divided into small pieces called packets. Packet switching allows these packets to travel across different networks and routes before reaching the destination. The website server has an IP address that identifies its location on the internet. TCP/IP provides the rules that allow the user's device and the server to communicate and ensure data is delivered correctly. HTTP or HTTPS is used to transfer web pages and other website content between the user's browser and the server. HTTPS is preferred because it encrypts the communication, helping protect users' information while they browse and purchase books from EpicReads.
 
 ---
 
@@ -71,12 +71,12 @@ EpicReads bookstore has two application versions:
 
 ### Two-Tier Application
 
-* Frontend
-* Database
+* FrontEnd 
+* Backend
 
 ### Three-Tier Application
 
-* Frontend
+* FrontEnd
 * Backend
 * Database
 
@@ -91,7 +91,9 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Two Tier Architecture Diagram](<Screenshot 2026-07-17 163648.png>)
+
+![Three Tier Architecture Diagram](<Screenshot 2026-07-17 163701.png>)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +104,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* React
+* HTML/CSS
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js
+* Express.js
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* PostgreSQL
 
 ---
 
@@ -142,7 +144,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS, or Domain Name System, is like the internet's phonebook. It translates an easy-to-remember domain name such as epicreads.com into the server's IP address, 52.172.142.222, so users can access the website without remembering the numerical IP address. An A record should be used because it connects a domain name directly to an IPv4 address. Therefore, the A record would point epicreads.com to 52.172.142.222, allowing users to reach the EpicReads website by entering the domain name in their browser.
 
 ---
 
@@ -178,7 +180,10 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![Powershell Command Screenshot](<Screenshot 2026-07-17 164908.png>)
+
+![Bash Command Screenshot](<Screenshot 2026-07-17 165058.png>)
+
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -218,7 +223,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/nwoke-onyinye_devops-cloudengineering-networking-share-7440083379083010049-cVXi/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7440083382333739008&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 ```
 
 ---
@@ -227,7 +232,25 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+Starting my DevOps journey with Pravin Mishra — Week 0 reflections.
+One thing is already clear: these basics are not optional. They are the foundation for everything in DevOps. Without understanding them properly, it becomes difficult to work with real systems, troubleshoot issues, or scale applications.
+Here is a quick breakdown of what I learned:
+🔹 Networking Basics
+Protocols as the rules that make communication between systems possible.
+🔹 Core Internet Concepts
+• Packet Switching – how data moves across networks
+• IP Address – how systems are identified
+• TCP/IP – ensures reliable delivery
+• HTTP/HTTPS – how browsers and servers communicate securely
+🔹 Application Architecture
+• Two-tier architecture (client + server)
+• Three-tier architecture (client + application + database)
+Plus the tools used at each layer.
+🔹 DNS Fundamentals
+How domain names map to IP addresses and how an A record connects epicreads.com to a server.
+#DevOps #CloudEngineering #Networking #LearningInPublic #TechCommunity #AWS #Linux
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://github.com/Onyinwoke/devops-micro-internship-pravinmishra.git
+ · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
 
 ---
 
@@ -235,19 +258,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found it easy to understand the fundamental networking concepts such as protocols, IP addresses, DNS, and HTTP/HTTPS because they could be related to everyday activities like sending mail, making phone calls, and browsing websites. Using practical examples such as the EpicReads bookstore helped me visualize how these concepts work together to deliver a website to users.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The most challenging part was understanding how all the networking components work together behind the scenes. Concepts like the TLS handshake, different API types, HTTP methods, and how DNS records, application architecture, and the CI/CD pipeline interact required a deeper understanding. However, breaking each topic into simple examples made it much easier to connect the dots and see how modern web applications are built and delivered.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+I want to improve my understanding of how networking concepts are applied in real-world DevOps environments. While I now understand the theory behind protocols, DNS, APIs, TLS, and CI/CD, I would like to gain more hands-on experience by configuring servers, troubleshooting network issues, and building projects that use these technologies. Practicing with tools such as Git, Docker, Kubernetes, and cloud platforms will help strengthen my practical skills and prepare me for a career in DevOps.
 
 ---
 
