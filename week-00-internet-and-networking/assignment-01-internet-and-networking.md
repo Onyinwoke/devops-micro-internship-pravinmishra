@@ -249,8 +249,9 @@ Plus the tools used at each layer.
 🔹 DNS Fundamentals
 How domain names map to IP addresses and how an A record connects epicreads.com to a server.
 #DevOps #CloudEngineering #Networking #LearningInPublic #TechCommunity #AWS #Linux
+
 P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://github.com/Onyinwoke/devops-micro-internship-pravinmishra.git
- · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
+Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
 
 ---
 

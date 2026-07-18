@@ -33,7 +33,8 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe people should not limit themselves to one career for life because the human mind can learn and adapt continuously. I also do not believe in soulmates; healthy relationships are built on kindness, respect, and commitment. Finally, I believe discipline comes from consistency. Repeating positive actions over time creates habits that eventually shape our success and the direction of our lives.
+
 
 ---
 
@@ -55,11 +56,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Consistency beats motivation.
 
 ### Evidence from my life
 
-Add your answer here...
+I discovered that studying a little every day produced better results than waiting until I felt motivated. Passing my AWS certification and learning DevOps happened because I stayed consistent, even on days I did not feel like studying.
 
 ---
 
@@ -67,11 +68,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Skills can be transferred across industries
 
 ### Evidence from my life
 
-Add your answer here...
+I experimented by combining my procurement experience with cloud and DevOps learning. The result was that I developed a unique professional profile and attracted opportunities that I would not have had by staying in one field.
 
 ---
 
@@ -79,11 +80,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Relationships are sustained by actions, not feelings.
 
 ### Evidence from my life
 
-Add your answer here...
+Through life experiences, I discovered that kindness, respect, and reliability matter more than excitement or butterflies. Strong relationships lasted because of consistent behavior and shared values.
 
 ---
 
@@ -135,13 +136,29 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+MY VERSION 2.0
+
+She earned multiple industry certifications, including the AWS Certified Cloud Practitioner, AWS Solutions Architect Associate, and several DevOps-related credentials. She built and shipped cloud-based automation projects that demonstrated how procurement processes could be improved through technology. Her GitHub portfolio showcased projects involving serverless applications, infrastructure automation, CI/CD pipelines, and cloud monitoring solutions. Several of her repositories attracted contributions from other professionals seeking to apply technology in traditional business functions.
+
+After transitioning into a Cloud and Business Transformation role, she led digital transformation initiatives that automated procurement reporting, vendor onboarding, and inventory tracking processes. These projects significantly reduced manual work and improved operational efficiency for the organizations she served.
+
+Beyond her corporate achievements, Onyinye published articles and blog posts explaining cloud computing and DevOps concepts in simple terms for professionals from non-technical backgrounds. Her writings gained attention because they addressed a growing audience of mid-career professionals looking to transition into technology without abandoning their previous experience.
+
+Write on Medium
+She also contributed to the technology community by mentoring women and experienced professionals entering cloud computing and DevOps. She organized virtual workshops, spoke at professional events, and shared learning resources through social media and community groups. Her story became an example of lifelong learning and adaptability.
+
+By 2030, she had built a reputation as a leader who understood both business and technology. Recruiters and industry professionals frequently referenced her career journey as proof that career transitions were possible at any stage of life. Her transformation demonstrated that expertise gained in one field could become a powerful advantage when combined with emerging technologies, and she had established herself as a respected voice in digital transformation and modern procurement.
+
+P.S. This post is part of the DevOps Micro Internship with Agentic AI Cohort 3 by Pravin Mishra.
+
+You can begin your own DevOps journey by joining the DMI waiting list:
+https://lnkd.in/gQT45gGa
 
 ### Public Link
 
 Paste your link here:
 
-`Add your URL here`
+(https://medium.com/@onyinyenwoke/my-version-2-0-a730146cc446)
 
 ---
 
@@ -173,7 +190,11 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+I have never knowingly cut corners or engaged in dishonest behaviour. In procurement, we frequently encounter situations that test our integrity. Early in my career, a customer wanted to give me a gift in appreciation for facilitating a transaction. As a new employee, I felt uncomfortable accepting it because I knew it could create a conflict of interest or the appearance of one.
+
+I immediately reported the situation to senior management and followed the company's guidance. The experience reinforced my belief that transparency is critical in procurement because trust is one of our most important assets. I felt proud that I had done the right thing, and I was later recognized by our Managing Director with an integrity award.
+
+That experience shaped my leadership style. I believe procurement professionals should always err on the side of disclosure rather than putting themselves or the organization at risk
 
 ---
 
@@ -199,16 +220,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. ![Robin Sharma](the-5am-club.jpeg)
+2. ![Cassie Holmes](happier-hour.jpeg)
+3. ![Cal Newport](deep-work.jpeg)
+4. ![Michael Easter](the-comfort-crisis.jpeg)
+5. ![Jenny Odell](how-to-do-nothing.jpeg)
+6. ![Joseph Murphy](the-power-of-the-subconscious-mind.jpeg).
+7. ![Julie Menanno](secure-love.jpeg)
+8. ![Matthew Walker](why-we-sleep.jpeg)
+9. ![Morgan Housel](the-pschology-of-money.jpeg)
+10. ![Michael Singer](the-untethered-soul.jpg)
 
 ---
 
@@ -237,16 +258,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Continuous learning and skill development
+* Career progression and professional impact
+* Financial health and wealth creation
+* Physical health and fitnes
+* Mental and emotional well-being
+* Quality of relationships and family life
+* Personal integrity and values alignment
+* Productivity and time management
+* Leadership growth and contribution to others
+* Consistency in habits and self-discipline
 
 ---
 
@@ -270,11 +291,14 @@ Examples:
 
 **Yes / No**
 
-Answer:
+Answer:Yes
 
 Add your answer here...
 
----
+* Career Development
+* Travel
+* Impact
+* Review Monthly Budget
 
 ## Step 2: Your 5-Month Routine + Focus Blocks
 
@@ -290,19 +314,21 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
-
+.
+* Mon–Thu: 3hours deep work
+* Sat: DMI session
+* Sun: Weekly review
 ---
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+ 7-10pm Everyday of the Week
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+3 hours
 
 ---
 
@@ -318,34 +344,54 @@ Examples:
 
 Add your answer here...
 
----
+* Phone on airplane mode and placed out of reach
+* Dsable Instagram and Facebook
+* Set Up a reading room in my home
 
 # Reflection – Week 1
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realized that I thrive when I have structure and clear goals. I realized that my diverse experiences in procurement and technology are a strength, not a disadvantage.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+I realized that my phone is one of my biggest distractions. I tend to reach for it out of habit, even when I have important work to do. To break this loop, I am practicing intentional disconnection by putting it away and temporarily deactivating it during deep work sessions.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+From this week, I will put my phone on Do Not Disturb and keep it in another room from 7:00 PM to 10:00 PM every Monday to Thursday. During that hour, I will focus only on studying AWS, DevOps, or working on my projects.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+WEEK 1- SUCCESS MINDSET
+I got into the internship... Yippee! 
+This weekend, I officially started the DevOps Micro Internship (DMI) Cohort 3, and guess what? We didn't begin with tools or code. We started with something even more important: a success mindset.
+Some lessons from Day 1 that really resonated with me:
+
+ Consistency beats motivation.
+ Small habits lead to big transformations.
+Growth starts with taking ownership of your journey.
+You can reinvent yourself at any stage of your career.
+
+One thing I discovered about myself? My phone is one of my biggest distractions. So, my first system is simple: one hour of uninterrupted deep work every evening, phone on Do Not Disturb and out of reach.
+
+The next 14 weeks will be filled with learning, building, and stretching beyond my comfort zone, and I'm excited for every bit of it.
+Here's to showing up every day and becoming a little better than yesterday. 
+
+Thank you, Pravin Mishra, for this opportunity!
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community ( https://lnkd.in/eFZM28RQ ).
+
+https://www.linkedin.com/posts/nwoke-onyinye_join-the-dmi-devops-micro-internship-share-7478882535759036417-Veu_/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7478882538611113986&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: https://www.linkedin.com/posts/nwoke-onyinye_join-the-dmi-devops-micro-internship-share-7478882535759036417-Veu_/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7478882538611113986&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c 
+- Blog / Medium : https://medium.com/@onyinyenwoke/i-didnt-change-careers-i-expanded-one-my-journey-from-procurement-to-tech-2a16248724af 
 
 ---
 
