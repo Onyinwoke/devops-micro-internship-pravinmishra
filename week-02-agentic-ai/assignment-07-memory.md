@@ -20,7 +20,7 @@ Discover exactly where Claude Code stores memory for this project.
 
 #### Screenshot 1 — Memory file path shown by Claude
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-10 171405.png>)
 
 ---
 
@@ -34,13 +34,13 @@ Teach Claude three specific facts about the project and instruct it to save them
 
 #### Screenshot 2 — Claude confirming the memory was saved
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-10 172205.png>)
 
 ---
 
 #### Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-10 172241.png>)
 
 ---
 
@@ -54,7 +54,7 @@ Terminate the current Claude Code session and restart it to ensure memory is the
 
 #### Screenshot 4 — VS Code reopened with a fresh Claude Code session showing no previous conversation
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-10 174317.png>)
 
 ---
 
@@ -68,13 +68,13 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 #### Screenshot 5 — Claude recalling hero section colors
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-07-10 174550.png>)
 
 ---
 
 #### Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-07-10 174605.png>)
 
 ---
 
@@ -93,13 +93,13 @@ Paste your Linkedin post link here:
 
 `Add your URL here`
 
----
+https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481400731938295808-ouO6/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481400735272914944&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ## GitHub Repository URL
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/Onyinwoke/Ultimate-Agentic-DevOps-with-Claude-Code
 
 ---
 

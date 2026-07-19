@@ -402,7 +402,7 @@ Claude should not start reading files or executing commands.
 
 - Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
 
----
+
 
 ### Task 7 — Test the PreToolUse Hook
 
@@ -448,7 +448,7 @@ Destructive command detected.
 
 - Screenshot 7 — PreToolUse hook blocking terraform destroy
 
----
+![Screenshot 7](<Screenshot 2026-07-10 165031.png>)
 
 ### Task 8 — Test the PostToolUse Logging Hook
 
