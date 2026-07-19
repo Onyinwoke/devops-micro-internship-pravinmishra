@@ -20,7 +20,7 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-19 024658.png>)
 
 ---
 
@@ -34,13 +34,13 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-19 030150.png>)
 
 ---
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-19 030401.png>)
 
 ---
 
@@ -54,13 +54,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-19 030954.png>)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-07-19 031132.png>)
 
 ---
 
@@ -74,7 +74,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-07-19 032558.png>)
 
 ---
 
@@ -90,13 +90,13 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481036221465563137-h6-_/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481036223176814592&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/Onyinwoke/Ultimate-Agentic-DevOps-with-Claude-Code
 ---
 
 # Completion Checklist

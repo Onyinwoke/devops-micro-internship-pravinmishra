@@ -20,13 +20,13 @@ Install the Claude Code CLI globally and authenticate it using your Anthropic ac
 
 #### Screenshot 1 — Terminal showing `claude --version` with the version number visible
 
-Add your screenshot here.
+![Screenshot 1](Task1.png)
 
 ---
 
 #### Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
 
-Add your screenshot here.
+![creenshot 1](<Screenshot 2026-07-19 005350.png>)
 
 ---
 
@@ -42,7 +42,7 @@ Fork the provided GitHub repository, clone it to your local machine, and open it
 
 Add your screenshot here.
 
----
+![Screenshot 3](<Screenshot 2026-07-19 014051.png>)
 
 # Task 3 — Observe the Agentic Loop
 
@@ -54,13 +54,13 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather �
 
 #### Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-19 013042.png>)
 
 ---
 
 #### Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-07-19 013159.png>)
 
 ---
 
@@ -77,7 +77,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/Onyinwoke/Ultimate-Agentic-DevOps-with-Claude-Code
 
 ---
 
