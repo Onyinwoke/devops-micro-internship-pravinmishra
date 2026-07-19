@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Blog post](<Screenshot 2026-07-19 180443.png>)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+https://medium.com/@onyinyenwoke/reflection-week-2-55883338e6e1
 
 ---
 
@@ -92,7 +92,7 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-07-19 180928.png>)
 
 ---
 
@@ -101,14 +101,22 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+Week 2 challenged me in ways I didn't expect, and it completely changed how I think about AI and DevOps.
+Over the past week, I worked with Claude Code to build reusable skills, configure subagents, connect external tools using MCP, implement permissions and safety hooks, and enable persistent project memory. Each assignment introduced a new layer of how Agentic AI can be integrated into real engineering workflows, not as a chatbot, but as a collaborative engineering assistant.
+One of my biggest takeaways was understanding that effective AI isn't about giving better prompts; it's about designing better systems. Files like CLAUDE.md, reusable skills, permissions, hooks, and memory provide the structure that allows AI to work consistently, safely, and with project-specific context.
+This week also taught me something about myself. I learn best by building and troubleshooting. There were moments when I mixed up terminals, encountered Git errors, or had to carefully reread instructions to understand why something wasn't working. Instead of becoming discouraged, I learned to slow down, read the output carefully, and trust the debugging process. Every challenge made me more confident with Git, VS Code, Terraform, and Claude Code.
+One moment that stood out was the memory assignment. After teaching Claude a few project rules, I completely closed the session and reopened a brand-new one. Without repeating any instructions, Claude remembered the project's styling decisions, responsive breakpoints, and even refused to recommend JavaScript because that rule had been stored in its project memory. Seeing AI retain project context across sessions made the concept of Agentic AI feel real.
+Going forward, one habit I will keep is following a simple checklist before every assignment: read the instructions completely, identify the correct terminal, note every required screenshot, and commit my work regularly. Small habits like these prevent unnecessary mistakes and make the learning process much smoother.
+Week 2 reinforced that modern DevOps is no longer just about infrastructure and automation. It's also about designing intelligent, secure, and reliable workflows where humans and AI collaborate effectively. I'm excited to keep building on this foundation.
+P.S. This post is a part of the DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community (https://lnkd.in/eFZM28RQ).
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481400731938295808-ouO6/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481400735272914944&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
