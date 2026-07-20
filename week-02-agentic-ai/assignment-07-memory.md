@@ -91,9 +91,9 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 Paste your Linkedin post link here:
 
-`Add your URL here`
-
 https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481400731938295808-ouO6/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481400735272914944&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
+
+
 
 ## GitHub Repository URL
 
