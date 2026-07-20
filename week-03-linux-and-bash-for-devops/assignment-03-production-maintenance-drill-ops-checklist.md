@@ -20,25 +20,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 012335-1.png>)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-15 182330.png>)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-15 182844.png>)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-15 183000.png>)
 
 ---
 
@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+The sudo ss -tulpen command showed Nginx listening on 0.0.0.0:80. This means Nginx is accepting HTTP connections on port 80 from any network interface.
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+The same ss output showed the SSH service listening on port 22, confirming that the server accepts SSH connections.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No. Only ports 22 (SSH) and 80 (HTTP) were open, which are required for remote administration and serving the web application.
 
 ---
 
@@ -74,19 +74,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 183804.png>)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-15 183919.png>)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-15 184033.png>)
 
 ---
 
@@ -96,13 +96,13 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+Users will not be able to access the application because the web server is unavailable. This could result in downtime and impact business operations.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+Restore the last known working Nginx configuration, test it using sudo nginx -t, then restart Nginx and verify that the application is accessible.
 
 ---
 
@@ -116,19 +116,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 184723.png>)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-19 205251.png>)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-15 184823.png>).
 
 ---
 
@@ -147,13 +147,13 @@ Write your answer here.
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+The error log was empty, which indicates Nginx did not encounter any recent problems while serving requests.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+It suggests the web server is operating normally and processing requests successfully.
 
 ---
 
@@ -167,25 +167,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 185126.png>)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-15 185215.png>)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-17 183202.png>)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-15 185327.png>)
 
 ---
 
@@ -195,13 +195,13 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+None of the resources appeared critical. CPU load was low, memory usage was within acceptable limits, and there was sufficient free disk space.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+Applications may fail to write logs or data, services can crash, and the operating system may become unstable or unresponsive.
 
 ---
 
@@ -215,19 +215,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 190037.png>)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-19 212030.png>)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-15 190353.png>)
 
 ---
 
@@ -237,7 +237,7 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+I verified that the expected application files were present in /var/www/html and confirmed that my deployment identifier was found in the application files. I also verified that the Nginx configuration included the try_files directive required for React routing.
 
 ---
 
@@ -251,19 +251,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 190853-1.png>)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-15 183919-1.png>)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-15 191419.png>)
 
 ---
 
@@ -273,19 +273,19 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+A syntax error was introduced into the Nginx configuration file, preventing Nginx from validating the configuration.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+I corrected the syntax error, verified the configuration using sudo nginx -t, and restarted Nginx.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+Always test configuration changes using nginx -t before restarting the service. Configuration changes should also be reviewed and tested in a staging environment before production deployment
 
 ---
 
@@ -299,13 +299,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-15 191419-1.png>)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-15 191419-2.png>)
 
 ---
 
@@ -315,19 +315,18 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+WThe deployed application files were removed from the web root, so Nginx had no content to serve.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
-
+I restored the application files to /var/www/html and verified that the application was accessible again.
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+Maintain deployment backups, automate deployments with CI/CD, and verify application health after every deployment to detect issues quickly
 
 ---
 
@@ -343,31 +342,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH keys are significantly harder to guess or brute-force than passwords and provide stronger authentication without transmitting passwords over the network.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Limiting open ports reduces the server's attack surface and minimizes opportunities for unauthorized access.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx on boot ensures the web server starts automatically after a reboot, reducing downtime and maintaining application availability.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Exposed credentials can allow attackers to gain unauthorized access to servers, cloud resources, applications, or sensitive data, potentially leading to security breaches.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Unused cloud resources continue to incur costs and can increase the security risk if left running. Cleaning them up helps reduce expenses and improves security.
 
 ---
 
@@ -379,13 +378,13 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_devops-aws-linux-share-7483283897670221824-Zu6h/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7483283899024912384&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-07-19 215836.png>)
 
 ---
 

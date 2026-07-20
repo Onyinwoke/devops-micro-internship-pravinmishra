@@ -20,7 +20,7 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+An AWS account provides access to Amazon Web Services and allows users to create and manage cloud resources such as virtual servers, storage, databases, and networking services. EpicReads needs an AWS account to begin moving its online bookstore infrastructure to the cloud.
 
 ---
 
@@ -28,7 +28,7 @@ Write your answer here.
 
 Write your answer here.
 
----
+AWS Free Tier allows new customers to explore and use selected AWS services without immediate charges, within the applicable limits and credits. Under the current Free account plan, new customers receive $100 in credits and can earn up to an additional $100. The Free account plan lasts for up to six months or until the available credits are used, whichever happens first.
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
@@ -56,7 +56,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-19 191715.png>)
 
 ---
 

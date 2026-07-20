@@ -20,7 +20,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+![Screenshot 0](<Screenshot 2026-07-16 185851.png>)
 
 ---
 
@@ -34,7 +34,7 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-16 190224.png>)
 
 ---
 
@@ -48,7 +48,7 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-16 191000.png>)
 
 ---
 
@@ -62,14 +62,13 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-16 191536.png>)
 
 ---
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-Add your screenshot here.
-
+![Screenshot 4](<Screenshot 2026-07-16 191536-1.png>)
 ---
 
 # Task 4 — Verify Website is Live
@@ -82,13 +81,13 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-07-16 192446.png>)
 
 ---
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-07-16 215356.png>)
 
 ---
 
@@ -102,13 +101,13 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-Add your screenshot here.
+![Sreenshot 7](<Screenshot 2026-07-16 203029.png>)
 
 ---
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-07-16 214801.png>)
 
 ---
 
@@ -120,13 +119,13 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_devops-linux-ubuntu-ugcPost-7483606907954499586-zKwn/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7483606909397323776&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-Add your screenshot here.
+![LinkedIn Post](image-1.png)
 
 ---
 
