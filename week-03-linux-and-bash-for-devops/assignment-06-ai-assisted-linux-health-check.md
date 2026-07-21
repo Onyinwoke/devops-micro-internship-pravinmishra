@@ -268,9 +268,9 @@ Bash is needed to execute the read-only triage script, while Read and Grep allow
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add your answer here.
-
 It ensures that the skill is manually invoked by the human operator rather than being triggered automatically by Claude. This provides an additional safety boundary and keeps the diagnostic workflow under human control.
+
+
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
@@ -477,9 +477,9 @@ https://www.linkedin.com/posts/nwoke-onyinye_devops-linux-bash-share-74851049522
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
-
 ![LinkedIn Post](image-3.png)
+
+
 
 # GitHub Repository URL
 
