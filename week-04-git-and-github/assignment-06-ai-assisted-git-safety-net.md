@@ -49,8 +49,8 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
 ![Screenshot 1](<Screenshot 2026-07-24 151136.png>)
+
 ---
 
 ### Notes
@@ -139,7 +139,7 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-07-24 185223.png>)
 
 ---
 
@@ -147,13 +147,13 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+/pr-ready has Bash, Read, and Grep because it needs to inspect Git status and the staged diff. It does not have Write because its job is to review and report, not modify files. This prevents the skill from silently changing the work it is supposed to review.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+The pre-commit hook identified the secret-like pattern because it followed a fixed rule. /pr-ready could identify both the secret-like value and the debug statement because it can interpret the staged change in context. The hook provides deterministic enforcement, while the AI skill provides broader review and judgment.
 
 ---
 
@@ -167,13 +167,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-07-24 154558.png>)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-07-24 162847.png>)
 
 ---
 
@@ -181,7 +181,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+I removed the hardcoded secret-like AWS key and removed the leftover debug statement. I then staged the corrected file again and reran the pre-commit checks. The commit succeeded because the staged content no longer matched the blocked secret pattern and did not contain an oversized file.
 
 ---
 
@@ -197,13 +197,13 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-07-24 184228.png>)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+Add
 
 ---
 

@@ -151,7 +151,7 @@ https://www.linkedin.com/posts/nwoke-onyinye_git-github-devops-share-74862360982
 
 Paste your fork URL here:
 
-https://github.com/Onyinwoke/devops-micro-internship-interviews
+https://github.com/Onyinwoke/devops-micro-internship-interview
 
 ---
 
