@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-07-24 145941.png>)
 
 ---
 
@@ -35,7 +35,7 @@ Add your screenshot here.
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+A dedicated feature branch isolates the assignment changes from the stable main branch. This allows me to develop and test the pre-commit hook and /pr-ready skill safely, review the changes, and open a Pull Request without directly changing the main branch.
 
 ---
 
@@ -50,14 +50,14 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
 Add your screenshot here.
-
+![Screenshot 1](<Screenshot 2026-07-24 151136.png>)
 ---
 
 ### Notes
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+The assignment uses an obviously fake key to safely simulate a secret-detection scenario without exposing real credentials. A real AWS access key could be abused if accidentally committed or shared publicly. The fake key allows the hook to be tested without creating a security risk
 
 ---
 
@@ -71,13 +71,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-07-24 151848.png>)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-07-24 151916.png>)
 
 ---
 
@@ -85,13 +85,13 @@ Add your screenshot here.
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
+The hook is tracked in the repository so the rules can be shared with other contributors and version-controlled alongside the project. A hook stored only in .git/hooks/ is local to one developer's machine and is not automatically shared when the repository is cloned.
 
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
+Git's pre-commit hook intercepts a commit before Git creates it. A Claude Code PreToolUse hook intercepts a tool call before Claude executes it. Both act as preventive controls that inspect an action before it happens and can block the action when a defined rule is violated.
 
 ---
 
@@ -105,7 +105,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-07-24 152326.png>)
 
 ---
 
@@ -113,13 +113,13 @@ Add your screenshot here.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
+The line that matched the fake key was the regular expression used by the hook to detect AWS access-key-shaped strings and private-key headers. It matches the fake AWS-style key because it begins with AKIA followed by 16 uppercase letters or numbers.
 
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
+No. A fixed pattern-based rule cannot detect every possible secret. For example, a poorly named variable containing a secret without a recognizable prefix may pass the hook. This demonstrates the limitation of deterministic rules: they are consistent and predictable, but they cannot understand context or recognize every possible form of sensitive information.
 
 ---
 
@@ -133,7 +133,7 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-07-24 152706.png>)
 
 ---
 
