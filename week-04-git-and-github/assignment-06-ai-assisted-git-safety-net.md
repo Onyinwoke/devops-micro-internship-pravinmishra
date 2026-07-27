@@ -49,7 +49,6 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
 ![Screenshot 1](<Screenshot 2026-07-24 151136.png>)
 ---
 
@@ -139,7 +138,7 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-07-24 162902.png>)
 
 ---
 
@@ -147,13 +146,13 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+/pr-ready has Bash and Read because it needs to inspect the repository status and staged Git diff. Grep is also available to search for suspicious patterns such as secrets, debug statements, and TODOs. It does not have Write because its purpose is to review and report risks, not modify files. This prevents the AI reviewer from changing the code it is supposed to assess.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+Both the pre-commit hook and /pr-ready identified the hardcoded key and the debug echo in the staged file. However, they serve different purposes. The pre-commit hook uses fixed rules to block a commit, while /pr-ready provides a broader human-readable review and drafts a PR title and description. Depending on the exact patterns used, one may catch a specific issue that the other does not.
 
 ---
 
@@ -167,13 +166,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-07-24 154558.png>).
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-07-24 182441.png>)
 
 ---
 
@@ -181,7 +180,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+I removed the hardcoded key from scripts/notify.sh so that a credential-shaped secret was no longer stored directly in the source code. I also removed the debug echo statement because it produced unnecessary debugging output. After staging these changes, the pre-commit hook allowed the commit to proceed, and /pr-ready reported a clean risk review
 
 ---
 
@@ -197,13 +196,13 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-07-24 201040.png>)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/pull/80
 
 ---
 
@@ -211,19 +210,19 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+I reviewed the AI-generated title and description and did not make any changes because they accurately described the final implementation
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+IThe AI could misunderstand the changes, describe files that were not modified, claim that a feature was added when it was not, or leave inaccurate security warnings in the PR description. Reviewing the draft ensures that the human remains responsible for the final information submitted.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+The shared upstream repository belongs to the course or project owner. My fork is the repository where I have permission to push branches and open Pull Requests. Targeting my own fork allows me to test the complete workflow without accidentally opening a Pull Request against the shared upstream repository.
 
 ---
 
@@ -237,31 +236,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+The hook gathers staged file names and staged file contents. The /pr-ready skill gathers the staged diff, Git status, and change summary.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+The pre-commit hook analyzes the staged files against fixed rules for secret-like patterns and oversized files. /pr-ready analyzes the changes more broadly for debug statements, mixed changes, missing context, unclear intent, and other review concerns
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+The human decides what to fix, runs git commit, pushes the branch, and opens the Pull Request. This keeps important actions under human control and prevents the AI from independently changing project history or publishing changes.
 
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
+Verification includes confirming that the hook blocks the risky commit, confirming that the corrected commit succeeds, reviewing the clean /pr-ready report, and checking the final Pull Request on GitHub.
 
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+The pre-commit hook provides predictable enforcement of critical rules, while the AI skill provides contextual review that fixed rules cannot easily perform. One gives consistent safety enforcement; the other provides broader judgment and review assistance.
 
 ---
 
@@ -275,7 +274,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+[LinkedIn Post](https://lnkd.in/p/eCs-_Sge)
 
 ---
 
@@ -283,9 +282,9 @@ Add your LinkedIn post URL here...
 
 Add 3-5 bullet points on what you learned this week.
 
--
--
--
+-Human approval remains important for committing, pushing, and opening Pull Requests.
+-Fixed rules are predictable and enforceable, but they cannot understand every context or detect every possible issue.
+-AI-assisted review can identify broader concerns such as debug code, mixed changes, and unclear intent.
 
 ---
 
@@ -305,7 +304,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+[GitHub](https://github.com/pravinmishraaws/devops-micro-internship-pravinmishra/pull/78)
 
 ---
 
