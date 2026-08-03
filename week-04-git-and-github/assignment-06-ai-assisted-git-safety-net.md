@@ -26,7 +26,6 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 ### Evidence
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
-
 ![Screenshot 1](<Screenshot 2026-07-24 145941.png>)
 
 ---
@@ -36,6 +35,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 **1. Why create a dedicated branch instead of doing this work on main?**
 
 A dedicated feature branch isolates the assignment changes from the stable main branch. This allows me to develop and test the pre-commit hook and /pr-ready skill safely, review the changes, and open a Pull Request without directly changing the main branch.
+
 
 ---
 
@@ -336,10 +336,10 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
+- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
+- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
 - ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
 - 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
