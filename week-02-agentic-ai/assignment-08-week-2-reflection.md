@@ -54,7 +54,7 @@ You can publish your blog on:
 
 Blog Link:
 
-https://medium.com/@onyinyenwoke/reflection-week-2-55883338e6e1
+https://medium.com/@onyinyenwoke/reflection-week-2-55883338e6e1?postPublishedType=repub
 
 ---
 

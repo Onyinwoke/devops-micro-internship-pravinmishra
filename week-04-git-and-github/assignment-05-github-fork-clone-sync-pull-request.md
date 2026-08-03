@@ -126,9 +126,9 @@ https://github.com/pravinmishraaws/devops-micro-internship-interviews/pull/371
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+Paste your LinkedIn post URL here: https://www.linkedin.com/posts/nwoke-onyinye_git-github-devops-share-7486236098222858243-P6y-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
-https://www.linkedin.com/posts/nwoke-onyinye_git-github-devops-share-7486236098222858243-P6y-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
+
 
 ---
 
@@ -149,9 +149,7 @@ https://www.linkedin.com/posts/nwoke-onyinye_git-github-devops-share-74862360982
 
 ## Fork URL
 
-Paste your fork URL here:
-
-https://github.com/Onyinwoke/devops-micro-internship-interviews
+Paste your fork URL here: https://github.com/Onyinwoke/devops-micro-internship-interviews
 
 ---
 

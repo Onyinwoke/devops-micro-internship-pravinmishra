@@ -57,7 +57,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
 
-*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
+*Share your stack:* `https://github.com/Onyinwoke/devops-micro-internship-pravinmishra#my-devops-stack`
 
 **Preview — what your full stack looks like:**
 
@@ -67,20 +67,23 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+ Week 00 → Internet & Networking Basics 
+ [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
 
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+ Week 01 → Success Mindset 
+ [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
-<!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+ Week 02 → Agentic AI with Claude Code 
+ [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
-<!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+ Week 03 → Linux & Bash for DevOps 
+ [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
 <!-- Week 04 → Git & GitHub -->
 <!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
+
+ Week 04 → Git & GitHub 
+ [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -130,7 +133,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_devops-cloudengineering-networking-share-7440083379083010049-cVXi/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7440083382333739008&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/i-thought-the-internet-was-just-wi-fi-until-i-learned-what-happens-behind-the-scenes-c4796f48b9cb
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_devops-cloudengineering-networking-share-7440083379083010049-cVXi/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7440083382333739008&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/i-thought-the-internet-was-just-wi-fi-until-i-learned-what-happens-behind-the-scenes-c4796f48b9cb?postPublishedType=repub
 | 01 | Success Mindset | ✅ Completed | ✅ Solved |https://www.linkedin.com/posts/nwoke-onyinye_join-the-dmi-devops-micro-internship-share-7478882535759036417-Veu_/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7478882538611113986&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c |  https://medium.com/@onyinyenwoke/i-didnt-change-careers-i-expanded-one-my-journey-from-procurement-to-tech-2a16248724af|
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481400731938295808-ouO6/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481400735272914944&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/reflection-week-2-55883338e6e1?postPublishedType=repub|
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_devops-linux-bash-share-7485104952219037696-ZiYM/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7485104954400030720&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/when-nginx-took-a-break-bash-went-to-work-948a175b30c8 |
