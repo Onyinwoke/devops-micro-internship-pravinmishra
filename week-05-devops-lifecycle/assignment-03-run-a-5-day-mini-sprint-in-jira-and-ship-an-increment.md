@@ -19,14 +19,14 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 ### Evidence
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
+![Screenshot 1](<Screenshot 2026-08-05 014533-1.png>)
 
-Add your screenshot here.
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
+![Screenshot 2](<Screenshot 2026-08-05 015012.png>)
 
-Add your screenshot here.
 
 ---
 
@@ -40,25 +40,25 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-08-06 234924.png>)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-08-06 013756.png>)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-08-06 015535.png>)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-08-06 022939.png>)
 
 ---
 
@@ -72,25 +72,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-08-06 030824.png>)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
 Add your screenshot here.
-
+![Screenshot 8](<Screenshot 2026-08-06 134031.png>)
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-08-06 031745.png>)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-08-06 230617.png>)
 
 ---
 
@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-08-06 140817.png>)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-08-06 145513.png>)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Screenschot 13](<Screenshot 2026-08-06 231721.png>)
 
 ---
 
@@ -130,7 +130,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![Screenshot 14](<Screenshot 2026-08-06 172835.png>)
 
 ---
 
@@ -150,14 +150,13 @@ Add your screenshot here.
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Screenshot 16](<Screenshot 2026-08-07 000738.png>)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
-
+![Screenshot 17](<Screenshot 2026-08-07 002435.png>)
 ---
 
 #### Demo Video URL
@@ -180,13 +179,13 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn URL](https://lnkd.in/p/e5hbVadM)
 
 ---
 
 #### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-08-07 014402.png>)
 
 ---
 
