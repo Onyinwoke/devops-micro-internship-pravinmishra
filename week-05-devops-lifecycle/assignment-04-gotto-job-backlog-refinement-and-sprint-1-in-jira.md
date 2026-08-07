@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-08-07 214834.png>)
 
 ---
 
@@ -28,7 +28,16 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Since this project was completed individually, I handled all four Scrum roles:
+
+* **Product Owner (PO):** I ranked which stories provide the most business and user value and prioritized them in the backlog.
+
+* **Scrum Master (SM):** I ensured the Scrum process was followed by managing timeboxes, sprint planning, retrospectives, and personal accountability.
+
+* **Dev Lead:** I built the selected story by implementing the required UI changes.
+
+* **DevOps Lead:** I handled the delivery of the completed work by committing, deploying, and verifying that the changes are live and working correctly.
+
 
 ---
 
@@ -42,7 +51,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-08-07 215118.png>)
 
 ---
 
