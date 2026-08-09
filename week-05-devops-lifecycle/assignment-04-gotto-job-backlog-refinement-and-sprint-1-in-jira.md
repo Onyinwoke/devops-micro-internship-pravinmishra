@@ -51,8 +51,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-![Screenshot 2](<Screenshot 2026-08-07 215118.png>)
-
+![Screenshot 2](<screenshots/Screenshot 2026-08-07 215118-1.png>)
 ---
 
 # Task 3 — Create the Epic
@@ -65,7 +64,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-08-07 221637.png>)
 
 ---
 

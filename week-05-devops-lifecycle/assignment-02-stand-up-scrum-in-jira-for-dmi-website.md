@@ -34,8 +34,7 @@ Create the Epic `Polish DMI Website UI & Deploy` to group the website UI and dep
 
 #### Screenshot 2 — Backlog showing the Epic panel enabled and the Epic visible
 
-![Screenshot 2](<Screenshot 2026-08-04 173448.png>)
-
+![Screenshot 2](<screenshots/Screenshot 2026-08-04 173448-1.png>)
 ---
 
 # Task 3 — Seed the Product Backlog with Six Stories
