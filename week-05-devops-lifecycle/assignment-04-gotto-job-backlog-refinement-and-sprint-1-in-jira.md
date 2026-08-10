@@ -78,13 +78,12 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
-
+![Screenshot 4](<Screenshot 2026-08-09 235948.png>)
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-08-10 000644.png>)
 
 ---
 
@@ -98,7 +97,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-08-10 001431.png>)
 
 ---
 
@@ -106,7 +105,31 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+Story Point Justifications
+
+S1 – Hero Tagline (1 point)
+This is a small change that only requires updating the existing heading text. No additional functionality or testing is expected beyond confirming the new text displays correctly.
+
+S2 – Button Colour (1 point)
+The task involves changing the colour of the existing buttons through a simple CSS update. Although multiple buttons are affected, the change is straightforward and requires minimal effort.
+
+S3 – Job Card Typography (2 points)
+This requires adjusting the font size and weight of the job cards and checking that the changes remain visually consistent across different screen sizes. The additional testing makes it slightly more complex.
+
+S4 – REMOTE Badge (2 points)
+This involves adding a new badge and ensuring it appears only for remote job listings. The conditional display adds some complexity compared with a basic text or styling change.
+
+S5 – Posted On Date (1 point)
+This is a simple text addition to display the posting date. It requires minimal development effort and no additional logic.
+
+S6 – Search Labels (2 points)
+Several labels and placeholder texts need to be updated and tested to ensure they remain clear and functional. This makes it slightly more involved than changing a single piece of text.
+
+S7 – Job Detail "Apply Now" Button (1 point)
+This involves adding a single "Apply Now" button with an email or placeholder link. Since it requires no additional logic or complex functionality, it is estimated at 1 point.
+
+S8 – Footer Trust Links (1 point)
+This requires adding two simple footer links, "About" and "Contact". It is a small HTML change with no complex functionality, so it is estimated at 1 point.
 
 ---
 
@@ -120,13 +143,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-08-10 004246.png>)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-08-10 004453.png>)
 
 ---
 
@@ -140,7 +163,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-08-10 005032.png>)
 
 ---
 
@@ -154,19 +177,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Screensot 10](<Screenshot 2026-08-10 012659.png>)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-08-10 012520.png>)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-08-10 020601.png>)
 
 ---
 
@@ -180,7 +203,8 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Screenshot 13](<Screenshot 2026-08-10 023254.png>)
+
 
 ---
 
@@ -196,13 +220,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_devops-aws-ec2-ugcPost-7492396303197388800-fOQm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Screenshot 14](<Screenshot 2026-08-10 024935.png>)
 
 ---
 
