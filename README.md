@@ -79,14 +79,14 @@ This is not a course. It is an internship-style program — real deployments, re
  Week 03 → Linux & Bash for DevOps 
  [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
+ Week 04 → Git & GitHub 
+ [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) 
 
  Week 04 → Git & GitHub 
  [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
 
-<!-- Week 05 → DevOps Lifecycle & Agile -->
-<!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
+ Week 05 → DevOps Lifecycle & Agile -->
+ [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) 
 
 <!-- Week 06 → AWS Cloud -->
 <!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
@@ -138,7 +138,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-claudecode-ugcPost-7481400731938295808-ouO6/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7481400735272914944&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/reflection-week-2-55883338e6e1?postPublishedType=repub|
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_devops-linux-bash-share-7485104952219037696-ZiYM/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7485104954400030720&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/when-nginx-took-a-break-bash-went-to-work-948a175b30c8 |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_ai-assisted-git-safety-net-building-a-pr-share-7486504776969560065-LNiK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/from-it-works-on-my-branch-to-a-pull-request-what-i-learned-about-git-and-github-1a17f48d7f08?source=user_profile_page---------0-------------d72acd8a2665---------------------- |
-| 05 | DevOps Lifecycle & Agile | 🔄 In Progress | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_ai-claudecode-jira-share-7493250831220195328-SDjm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/claude-claude-claude-what-happens-when-ai-meets-jira-319a70585ba7?postPublishedType=initial |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
