@@ -163,7 +163,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+https://www.loom.com/share/62ed0eae64ed4722ae1293716dfab1ad
 
 ---
 

@@ -115,11 +115,12 @@ Create a `/sprint-health` skill restricted to read-only Jira tools plus `Read`, 
 
 #### Screenshot 6 — `SKILL.md` frontmatter showing `allowed-tools` limited to read-only Jira tools plus `Read`, with `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-08-11 165304.png>)
 
 #### Screenshot 7 — `/sprint-health` output showing the full triage report against your real sprint
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-08-11 170150.png>)
+
 
 ### Notes You Must Write (Very Important):
 

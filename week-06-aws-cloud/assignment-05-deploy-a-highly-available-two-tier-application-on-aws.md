@@ -20,32 +20,31 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-08-15 180404.png>)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-08-16 135434.png>)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-08-16 162450.png>)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-08-16 190706.png>)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
-
+![Screenshot 5](<Screenshot 2026-08-16 151232.png>)
 ---
 
 # Task 2 — Create Security Groups (ALB, EC2, RDS) with Least Privilege
