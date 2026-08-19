@@ -78,7 +78,7 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+
 ![Screenshot 8](<Screenshot 2026-08-06 134031.png>)
 ---
 
@@ -144,7 +144,7 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-08-07 003657.png>)
 
 ---
 

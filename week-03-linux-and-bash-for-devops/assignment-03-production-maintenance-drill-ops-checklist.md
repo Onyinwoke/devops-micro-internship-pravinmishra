@@ -141,7 +141,7 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+The error log was empty, which indicates Nginx did not encounter any recent problems while serving requests.
 
 ---
 
