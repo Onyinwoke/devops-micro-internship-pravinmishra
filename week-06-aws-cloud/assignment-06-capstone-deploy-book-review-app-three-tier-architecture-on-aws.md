@@ -1,4 +1,4 @@
-# Assignment 6 — Capstone: Deploy Book Review App (Three-Tier Architecture) on AWS
+# Assignment 6 — Capstone Assignment — Deploy Book Review App (Three-Tier Architecture) on AWS
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -38,7 +38,7 @@ Write your answer here.
 
 eu-north-1 (Stockholm)
 
-**Services used:**
+**Services:**
 
 Write your answer here.
 
@@ -79,37 +79,37 @@ Capture visual proof of every tier and load balancer.
 
 ### Evidence
 
-#### Screenshot 1 — Web Tier EC2 instance in a public subnet
+#### Web EC2
 
 ![Screenshot 1](<Screenshot 2026-08-25 130612.png>)
 
 ---
 
-#### Screenshot 2 — App Tier EC2 instance in a private subnet
+#### App EC2
 
 ![Screenshot 2](<Screenshot 2026-08-25 130636.png>)
 
 ---
 
-#### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
+#### Public ALB
 
 ![Screenshot 3](<Screenshot 2026-08-25 132238.png>)
 
 ---
 
-#### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
+#### Internal ALB
 
 ![Screenshot 4](<Screenshot 2026-08-25 132809.png>)
 
 ---
 
-#### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
+#### RDS + Replica
 
 ![Screenshot 5](<Screenshot 2026-08-25 135826.png>)
 
 ---
 
-#### Screenshot 6 — Book Review App UI working through the public ALB
+#### App UI proof
 
 ![Screenshot 6](<Screenshot 2026-08-26 175957.png>)
 
@@ -141,7 +141,7 @@ Health checks configured through the target groups.
 The final connectivity tests were successful and the application was accessible through the Web EC2 public IP and through the Public ALB.
 ---
 
-**Issues encountered and fixes:**
+**Issues + fixes:**
 
 MySQL client was not installed: When attempting to connect to RDS from the App EC2, the command returned (Command 'mysql' not found). To fix, the MySQL client needed to be installed on the App EC2 before using the mysql command.
 
@@ -187,7 +187,7 @@ https://www.linkedin.com/posts/nwoke-onyinye_aws-cloudcomputing-devops-activity-
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 ![linkedIn Post](<Screenshot 2026-08-26 185650.png>)
 

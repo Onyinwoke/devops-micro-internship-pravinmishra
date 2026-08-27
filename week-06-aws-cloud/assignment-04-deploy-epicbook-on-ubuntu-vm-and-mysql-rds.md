@@ -70,7 +70,7 @@ Launch an Ubuntu 20.04 instance in the public subnet with `epicbook-ec2-sg` atta
 
 ---
 
-#### Screenshot 7 — Terminal showing a successful SSH login
+#### Screenshot 7 — Terminal showing a successful SSH login with the `ubuntu@...` prompt
 
 ![Screenshot 7](<Screenshot 2026-08-14 154353.png>)
 
@@ -156,7 +156,7 @@ Clone the EpicBook repository, install backend dependencies, configure `.env` wi
 
 ---
 
-#### Screenshot 16 — `curl` output proving the backend responds
+#### Screenshot 16 — `curl` output proving the backend responds; a 200, 301, or 404 response is acceptable if the service responds
 
 ![Screenshot 16](<Screenshot 2026-08-14 230605-1.png>)
 
@@ -196,13 +196,13 @@ Verify the frontend loads publicly, the backend responds through Nginx, and EC2 
 
 ---
 
-#### Screenshot 20 — Terminal showing a successful API call through the public endpoint
+#### Screenshot 20 — Terminal showing a successful API call through the public endpoint, such as `curl http://<EC2_PUBLIC_IP>/api/...`
 
 ![Screenshot 20](<Screenshot 2026-08-14 232440.png>)
 
 ---
 
-#### Screenshot 21 — Terminal showing a successful database connectivity test (`SELECT 1;` or similar)
+#### Screenshot 21 — Terminal showing the successful database connectivity test using `SELECT 1;` or similar
 
 ![Screenshot](<Screenshot 2026-08-14 234004.png>)
 
