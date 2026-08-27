@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![Screenshot 1](<Screenshot 2026-08-20 221201.png>)
 
 ---
 
@@ -36,13 +36,24 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 Write your answer here.
 
----
+eu-north-1 (Stockholm)
 
 **Services used:**
 
 Write your answer here.
 
----
+Amazon VPC
+Amazon EC2
+Application Load Balancers
+Auto Scaling
+Amazon RDS for MySQL
+Amazon CloudWatch
+IAM
+Security Groups
+Target Groups
+Internet Gateway
+NAT Gateway
+Route Tables
 
 # Task 3 — Public Entry Point
 
@@ -56,7 +67,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+http://book-review-web-alb-97783939.eu-north-1.elb.amazonaws.com/
 
 ---
 
@@ -70,37 +81,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Screenshot 1 — Web Tier EC2 instance in a public subnet
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-08-25 130612.png>)
 
 ---
 
 #### Screenshot 2 — App Tier EC2 instance in a private subnet
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-08-25 130636.png>)
 
 ---
 
 #### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-08-25 132238.png>)
 
 ---
 
 #### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-08-25 132809.png>)
 
 ---
 
 #### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-08-25 135826.png>)
 
 ---
 
 #### Screenshot 6 — Book Review App UI working through the public ALB
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-08-26 175957.png>)
 
 ---
 
@@ -114,19 +125,49 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+Successfully deployed a highly available Book Review application on AWS using a multi-tier architecture.
 
+The final deployment includes:
+
+A Public Application Load Balancer receiving internet traffic.
+A Web EC2 instance running Nginx and the Next.js frontend.
+An Internal Application Load Balancer routing API requests to the application tier.
+An App EC2 instance running the Node.js backend on port 3001.
+Amazon RDS MySQL for persistent application data.
+PM2 to manage the frontend and backend Node.js processes and automatically restart them after system reboots.
+Nginx configured as a reverse proxy, routing frontend traffic to Next.js and /api requests to the internal Application Load Balancer.
+Health checks configured through the target groups.
+
+The final connectivity tests were successful and the application was accessible through the Web EC2 public IP and through the Public ALB.
 ---
 
 **Issues encountered and fixes:**
 
-Write your answer here.
+MySQL client was not installed: When attempting to connect to RDS from the App EC2, the command returned (Command 'mysql' not found). To fix, the MySQL client needed to be installed on the App EC2 before using the mysql command.
+
+SSH private key location problem: The private key HA-KP.pem was stored on the local Windows machine, but SSH commands were sometimes executed from inside an EC2 instance. This resulted in errors such as "Identity file /home/ubuntu/Downloads/HA-KP.pem not accessible". To fix: SSH commands were run from the local Windows terminal using the correct Windows path:ssh -i "C:\Users\onyin\Downloads\HA-KP.pem" ubuntu@PUBLIC_IP
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+The following tools and sources were used during the deployment, configuration and troubleshooting:
+
+AWS Management Console for EC2, VPC, Security Groups, Target Groups, Application Load Balancers, RDS and networking configuration.
+AWS EC2 system logs and instance information for troubleshooting instance connectivity and configuration.
+AWS Target Group health checks to verify that the Web and App EC2 instances were reachable and responding on the expected ports.
+Linux/Ubuntu terminal for server administration and troubleshooting.
+SSH for secure remote access to EC2 instances.
+Nginx for reverse proxy and web traffic routing.
+PM2 for Node.js process management and automatic startup.
+Node.js and npm for running and building the application.
+Git and GitHub for source code management and repository deployment.
+curl for testing frontend and backend HTTP endpoints.
+systemctl for checking and managing Nginx and PM2 system services.
+OpenSSL for generating the JWT secret.
+MySQL client for testing connectivity to Amazon RDS.
+Application and PM2 logs for identifying backend startup and port-binding errors.
+Next.js build output for verifying that the frontend production build completed successfully.
 
 ---
 
@@ -142,13 +183,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_aws-cloudcomputing-devops-activity-7498438221786161152-fq_q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![linkedIn Post](<Screenshot 2026-08-26 185650.png>)
 
 ---
 

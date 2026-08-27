@@ -169,7 +169,7 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-![Screenshot 18](<Screenshot 2026-08-19 003732.png>)
+![Screenshot 18](<Screenshot 2026-08-20 020036.png>)
 
 ---
 
@@ -183,25 +183,25 @@ Test A: terminate one web instance and confirm the Auto Scaling Group replaces i
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
 
-Add your screenshot here.
+![Screenshot 19](<Screenshot 2026-08-20 023243.png>)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![Screenshot 20](<Screenshot 2026-08-18 004533.png>)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![Screenshot 21](<Screenshot 2026-08-20 023243-1.png>)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![Screenshot 22](<Screenshot 2026-08-18 005149.png>)
 
 ---
 
@@ -215,15 +215,20 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram (hand-drawn is fine), or an AWS console overview showing the components
 
-Add your screenshot here.
-
+![Screenshot 23](<Screenshot 2026-08-20 025444.png>)
 ---
 
 ### Notes
 
 Write a short summary covering the network, ALB/ASG setup, RDS setup, and the results of Test A and Test B.
 
-Write your answer here.
+Network Architecture - VPC setup, subnets across AZs, route tables, and all 3 security groups (ALB, EC2, RDS)
+ALB/ASG Setup - Application Load Balancer configuration, Target Group health checks, Auto Scaling Group with 3 instances, and the user data script
+RDS Setup - MySQL instance endpoint, database name (appdb), credentials, Multi-AZ configuration, and wp-config.php settings
+Test A Results - Initial problems (security groups, health checks, sed escaping) and how we fixed them
+Test B Results - Multi-instance database configuration issues (DB_NAME='mysql' vs 'appdb'), load balancing effects, and final resolution
+Architecture Benefits - High availability, scalability, load balancing, and security
+Lessons Learned - Key takeaways about security groups, health checks, multi-instance synchronization, and configuration management
 
 ---
 
@@ -239,13 +244,14 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/nwoke-onyinye_aws-wordpress-highavailability-activity-7496275546461376512-khgQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-08-20 194324.png>) 
+![LinkedIN Post](<Screenshot 2026-08-20 213421.png>)
 
 ---
 
