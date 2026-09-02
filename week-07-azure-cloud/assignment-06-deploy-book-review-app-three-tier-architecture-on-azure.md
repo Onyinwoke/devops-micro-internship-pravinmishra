@@ -20,13 +20,47 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-08-31 013527.png>)
 
 ---
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
-Add your screenshot here.
+Architecture Assumptions
+The application is a web-based book review application with a frontend, backend API, and MySQL database.
+Users access the application through the internet using a web browser.
+The presentation tier should be publicly accessible, while the application and database tiers should remain private.
+The application backend communicates with the database through an internal network connection.
+The database should not be directly accessible from the internet.
+Network traffic between tiers should be controlled using Network Security Groups (NSGs) and appropriate firewall rules.
+The architecture should allow the application to be scaled independently from the database.
+Sensitive information such as database credentials should not be stored directly in application source code.
+The deployment should use Azure-managed services where practical to reduce infrastructure administration.
+HTTPS should be used for communication between users and the public application endpoint.
+
+Tier	               Azure Service	                                    Purpose
+Presentation	       Azure App Service	                        Hosts the frontend/web application and provides the public entry point for users.
+Application	           Azure App Service	                        Hosts the backend API and application logic.
+Database	           Azure Database for MySQL – Flexible Server	Stores application data such as users, books, reviews, and other persistent information.
+Networking	           Azure Virtual Network (VNet)	                Provides private network connectivity between the application and database components.
+Network Security	   Network Security Groups (NSGs)	            Controls permitted inbound and outbound traffic between network components.
+Security	           Azure Key Vault	                            Stores sensitive values such as database credentials, connection strings, and application secrets.
+Monitoring	           Azure Monitor / Application Insights	        Monitors application performance, availability, errors, and resource health.
+
+Traffic Flow
+
+The expected traffic path is:
+
+User → HTTPS → Public Web/Presentation Tier → Internal API/Application Tier → Private Database Tier
+
+The database should only accept connections from the application tier. Users should never connect directly to the MySQL server.
+
+This gives the architecture a clear separation of responsibilities:
+
+Presentation tier: handles the user interface and incoming web requests.
+Application tier: processes business logic and API requests.
+Database tier: securely stores and retrieves persistent application data.
+
 
 ---
 
@@ -46,13 +80,13 @@ Add your screenshot here.
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-08-31 220508.png>)
 
 ---
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
+![Svreenshot 5](<Screenshot 2026-08-31 220124.png>)
 
 ---
 
@@ -66,13 +100,13 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-08-31 225251.png>)
 
 ---
 
 #### Screenshot 7 — Key Vault or approved secret-management configuration (without displaying secret values)
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-09-02 134110.png>)
 
 ---
 
@@ -86,7 +120,7 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-09-02 141007.png>)
 
 ---
 
@@ -106,7 +140,7 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-09-02 140605.png>)
 
 ---
 
