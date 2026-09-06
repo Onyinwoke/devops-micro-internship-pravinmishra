@@ -142,7 +142,33 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+What stayed exactly the same
+
+The workflow did not change:
+
+1. Audit first
+The script only reads Azure configuration and collects evidence.
+
+2. Claude explains the evidence
+The /azure-audit skill interprets the findings and recommends remediation.
+
+3. No automatic fixes
+Claude does not make changes to the Azure environment. The human reviews and applies the fix.
+
+4. Fix one real finding manually
+You choose an actual security issue identified by the audit and correct it yourself.
+
+5. Audit again
+Run the same read-only audit a second time and compare the evidence.
+
+6. Prove the fix
+The second audit demonstrates that the finding has disappeared or changed to a secure state.
+
+So the key lesson is that the name of the cloud provider changes, but the security workflow does not:
+
+Read-only evidence → explain finding → human remediation → read-only verification
+
+The aws and az commands are different because AWS and Azure expose their resources differently, but the audit discipline, separation between detection and remediation, and prove the fix cycle remained the same.
 
 ---
 

@@ -74,7 +74,7 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-06 110249.png>)
 
 ---
 
@@ -126,7 +126,7 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-09-06 111550.png>)
 
 ---
 
@@ -146,13 +146,13 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-09-06 112621.png>)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
+![Screnshot 12](<Screenshot 2026-09-06 010448.png>)
 
 ---
 
@@ -166,19 +166,18 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+![Screenshot 13](<Screenshot 2026-09-06 113058.png>)
 
 ---
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
-
+![Screesnhot 14](<Screenshot 2026-09-06 113245.png>)
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-09-06 113833.png>)
 
 ---
 
@@ -192,19 +191,20 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
+![Screenshot 16](<Screenshot 2026-09-06 021048.png>)
+![creenshot 16.1](<Screenshot 2026-09-06 114153.png>)
 
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
+![Screenshot 17](<Screenshot 2026-09-06 114259.png>)
 
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
+![Screenshot 18](<Screenshot 2026-09-05 232918.png>)
 
 ---
 
@@ -218,25 +218,25 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
+![Screenshot 19](book-reviewer-browser.webp)
 
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
+![Screenshot 20](scrn15-wk7-ass6.webp)
 
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
+![Screenshot 21](<Screenshot 2026-09-06 114836.png>)
 
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
+![Screenshot 22](<Screenshot 2026-09-06 021136.png>)
 
 ---
 
@@ -244,7 +244,7 @@ Add your screenshot here.
 
 Paste your public endpoint URL here:
 
-`Add your URL here`
+`http://20.215.208.39/`
 
 ---
 
@@ -252,7 +252,15 @@ Paste your public endpoint URL here:
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+Project Summary
+What worked: Web VM frontend and App VM backend were deployed successfully. Backend connected to Azure MySQL using SSL, and curl http://localhost:3001 confirmed the API was running.
+Issues fixed: Corrected the MySQL database name, resolved PM2 port 3001 conflict, corrected PM2 process/service names, and resolved SSH key/path issues.
+Availability: App VM kept private, with traffic intended to pass through the public Web VM/load balancer. PM2 configured for application availability after restarts.
+Security: SSH keys used for VM access, App VM kept private, MySQL SSL enabled, and network access controlled through NSGs.
+Secrets: JWT secret generated using openssl rand -hex 32 and stored in the backend .env file rather than application code.
+Monitoring: PM2 status/logs, systemd service checks, application curl tests, and load balancer health checks used.
+Backup: Azure-managed MySQL backups selected for database protection, with application code maintained in source control.
+Outstanding issue: External access to the Web VM later timed out on ports 22/80, requiring Azure networking/NSG verification.
 
 ---
 
