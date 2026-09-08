@@ -24,15 +24,14 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
-
+![Screenshot 1](<Screenshot 2026-09-08 112229.png>)
 ---
 
 ### Screenshot 2 — Azure CLI Version
 
 Add a screenshot of the terminal showing successful `az version` output.
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-08 130418.png>)
 
 ---
 
@@ -40,7 +39,7 @@ Add your screenshot here.
 
 Add a screenshot of the VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-08 130613.png>)
 
 ---
 
@@ -80,7 +79,8 @@ The `cloud-init.sh` file must contain the complete automated React application d
 
 Add a screenshot of VS Code showing the AzureRM provider, resource group, and Network Security Group configuration in `main.tf`.
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-09-08 134011.png>) 
+![Screenshot 4.1](<Screenshot 2026-09-08 133954.png>)
 
 ---
 
@@ -90,8 +90,8 @@ Add a screenshot of VS Code showing the Linux virtual machine configuration, inc
 
 Ensure that passwords, private keys, account IDs, access tokens, and other sensitive information are hidden.
 
-Add your screenshot here.
-
+![Screenshot 5](<Screenshot 2026-09-08 134123.png>)
+![Screenshot 5.1](<Screenshot 2026-09-08 225423.png>)
 ---
 
 ### Screenshot 6 — Completed `cloud-init.sh`
@@ -100,7 +100,7 @@ Add a screenshot of VS Code showing the completed `cloud-init.sh` deployment scr
 
 Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or other sensitive information are visible.
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-09-08 223734.png>)
 
 ---
 
@@ -108,7 +108,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the public IP `output` block in `main.tf`.
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-09-08 224014.png>)
 
 ---
 
@@ -124,7 +124,7 @@ Initialize the Terraform working directory and download the required provider co
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-09-08 224153.png>)
 
 ---
 
@@ -140,7 +140,8 @@ Review the Terraform execution plan and provision the Azure infrastructure.
 
 Add a screenshot showing the Terraform plan summary and the proposed resources.
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-09-08 224340.png>)
+![Screenshot 9.1](<Screenshot 2026-09-08 224404.png>) 
 
 ---
 
@@ -148,7 +149,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-09-08 224555.png>)
 
 ---
 
@@ -156,13 +157,13 @@ Add your screenshot here.
 
 Add a screenshot showing the VM public IP address returned by `terraform output`.
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-09-08 224731.png>)
 
 ## VM Public IP Address
 
 Record the public IP address displayed by `terraform output`.
 
-**VM Public IP Address:** Add the VM public IP address here
+**VM Public IP Address:** 74.248.122.229
 
 ---
 
@@ -178,7 +179,7 @@ Connect to the Azure Linux virtual machine and confirm that the cloud-init/user 
 
 Add a screenshot of the SSH terminal showing a successful connection to the Azure VM and evidence that the React application deployment completed.
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-09-08 232145.png>)
 
 ---
 
@@ -186,7 +187,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing that the Nginx service is running successfully.
 
-Add your screenshot here.
+![Screenshot 13](<Screenshot 2026-09-08 232821.png>)
 
 ---
 
@@ -204,7 +205,7 @@ Add a screenshot of the browser showing the deployed React application successfu
 
 Ensure that the Azure VM public IP is visible in the browser address bar.
 
-Add your screenshot here.
+![Screenshot 14](<Screenshot 2026-09-08 233057.png>)
 
 ---
 
@@ -220,7 +221,7 @@ Remove all Azure resources created by Terraform after completing the application
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-09-08 233648.png>)
 
 ---
 
