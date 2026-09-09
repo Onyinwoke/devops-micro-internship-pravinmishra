@@ -24,7 +24,7 @@ Prepare your local environment by installing Terraform, AWS CLI, and the HashiCo
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-09-09 000849.png>)
 
 ---
 
@@ -32,7 +32,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `aws --version` output.
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-09 000943.png>)
 
 ---
 
@@ -40,7 +40,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-08 130613-1.png>)
 
 ---
 
@@ -95,10 +95,10 @@ The network module must include:
 - VPC: `10.0.0.0/16`
 - Public subnet: `10.0.1.0/24`
 - Private database subnet A: `10.0.2.0/24`
-- Private database subnet B: `10.0.3.0/24`
 - Private database subnets in different Availability Zones
 - Internet Gateway
 - Public route table and public-subnet association
+- Private database subnet B: `10.0.3.0/24`
 - EC2 Security Group allowing SSH and HTTP
 - RDS Security Group allowing MySQL port `3306` only from the EC2 Security Group
 - Network module variables and outputs
