@@ -80,7 +80,7 @@ terraform-aws-epicbook/
 
 Add a screenshot of the VS Code Explorer showing the complete root project and the `network`, `ec2`, and `rds` module directory structure.
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-09-10 204512.png>)
 
 ---
 
@@ -109,7 +109,7 @@ The network module must include:
 
 Add a screenshot of VS Code showing the VPC, public subnet, and two private database subnet configurations.
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-09-10 204739.png>)
 
 ---
 
@@ -117,7 +117,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the Internet Gateway, public route table, and route table association.
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-09-10 205022.png>)
 
 ---
 
@@ -125,7 +125,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 and RDS Security Groups, including MySQL access from the EC2 Security Group only.
 
-Add your screenshot here.
+![Screesnhot 7](<Screenshot 2026-09-10 212546.png>)
 
 ---
 
@@ -133,7 +133,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the network module outputs.
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-09-10 212648.png>)
 
 ---
 
@@ -161,7 +161,7 @@ The `user_data.sh` script must install the required software without storing dat
 
 Add a screenshot of VS Code showing the EC2 resource and `user_data` configuration.
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-09-10 221555.png>)
 
 ---
 
@@ -171,7 +171,7 @@ Add a screenshot of VS Code showing `user_data.sh`.
 
 Ensure that no credentials, passwords, private keys, access tokens, or application secrets are visible.
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-09-10 224054.png>)
 
 ---
 
@@ -179,7 +179,8 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 module variables and outputs.
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-09-10 224236.png>) 
+![Screenshot 11.1](<Screenshot 2026-09-10 224226.png>)
 
 ---
 
@@ -205,7 +206,7 @@ The RDS module must include:
 
 Add a screenshot of VS Code showing the DB subnet group and RDS MySQL configuration.
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-09-10 225403.png>)
 
 ---
 
@@ -215,7 +216,7 @@ Add a screenshot of VS Code showing `publicly_accessible = false`, the RDS Secur
 
 Ensure that the database password and other sensitive values are hidden.
 
-Add your screenshot here.
+![Screesnhot 13](<Screenshot 2026-09-10 225620.png>)
 
 ---
 
@@ -223,7 +224,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the RDS endpoint output.
 
-Add your screenshot here.
+![Screesnhot 14](<Screenshot 2026-09-10 225836.png>)
 
 ---
 
@@ -239,7 +240,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-09-10 233611.png>)
 
 ---
 
@@ -247,7 +248,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+![Screenshot 16](<Screenshot 2026-09-10 233611-1.png>)
 
 ---
 
@@ -255,8 +256,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
-
+![Screenshot 17](<Screenshot 2026-09-11 000119.png>)
 ---
 
 # Task 6 — Initialize, Validate, Plan, and Apply the Terraform Configuration
@@ -271,15 +271,14 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
-
+![Screenshot 18](<Screenshot 2026-09-11 000536.png>)
 ---
 
 ### Screenshot 19 — Terraform Validation
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+![Screenshot 19](<Screenshot 2026-09-11 000733.png>)
 
 ---
 
@@ -287,15 +286,15 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
-
+![Screenshot 20](<Screenshot 2026-09-11 001212.png>) 
+![Screenshot 20.1](<Screenshot 2026-09-11 001142.png>)
 ---
 
 ### Screenshot 21 — Terraform Apply
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![Screenshot 21](<Screenshot 2026-09-11 002045.png>)
 
 ---
 
@@ -303,7 +302,7 @@ Add your screenshot here.
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+![Screesnhot 22](<Screenshot 2026-09-11 002045-1.png>)
 
 ---
 
@@ -319,7 +318,7 @@ Verify that the EC2 and RDS resources were successfully provisioned and confirm 
 
 Add a screenshot of AWS CLI showing the EC2 instance running.
 
-Add your screenshot here.
+![Screenshot 23](<Screenshot 2026-09-11 003037.png>)
 
 ---
 
@@ -327,7 +326,7 @@ Add your screenshot here.
 
 Add a screenshot of AWS CLI showing that RDS is available and not publicly accessible.
 
-Add your screenshot here.
+![Screenshot 24](<Screenshot 2026-09-11 003408.png>)
 
 ---
 
@@ -335,7 +334,9 @@ Add your screenshot here.
 
 Add a screenshot of the EC2 terminal showing the required software version checks and the active Nginx service.
 
-Add your screenshot here.
+![Screesnhot 25](<Screenshot 2026-09-11 013318.png>) 
+![Screesnhot 25.1](<Screenshot 2026-09-11 013243.png>)
+![Screesnhot 25.2](<Screenshot 2026-09-11 013717.png>)
 
 ---
 
