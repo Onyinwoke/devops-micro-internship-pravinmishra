@@ -141,7 +141,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_ai-claudecode-jira-share-7493250831220195328-SDjm/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/claude-claude-claude-what-happens-when-ai-meets-jira-319a70585ba7 |
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_aws-cloudsecurity-devops-activity-7498745856695816192-k1x1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c | https://medium.com/@onyinyenwoke/building-a-safer-aws-security-and-cost-audit-workflow-with-bash-aws-cli-and-ai-b3856dfed837?postPublishedType=initial |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/nwoke-onyinye_azure-cloudcomputing-devops-share-7502420486438547456-j1YP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c| https://medium.com/@onyinyenwoke/from-my-first-azure-vm-to-an-ai-assisted-security-audit-6bd4cc5f9c74?postPublishedType=initial |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ⬜ Not Started | ⏳ Pending | https://www.linkedin.com/posts/nwoke-onyinye_aws-terraform-cloudengineering-share-7504189908966862848-mg-c/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c| — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
