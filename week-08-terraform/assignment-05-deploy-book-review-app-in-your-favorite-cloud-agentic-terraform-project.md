@@ -9,7 +9,7 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 **Full Name:** Onyinyechi Nwoke  
 **Cloud Platform:** AWS
 **GitHub Repository URL:** https://github.com/Onyinwoke 
-**Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
+**Public Application URL / Load-Balancer DNS:** http://book-review-public-alb-1877082255.us-east-1.elb.amazonaws.com
 
 ---
 
@@ -250,23 +250,22 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
-
+![Screenshot 20](funtional-b-login-flow.webp)
 ---
 
 ### Screenshot 21 — Login or Authentication
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
-
+![Screenshot 21](srn14-wk8-ass5.webp)
 ---
 
 ### Screenshot 22 — Book Data
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![Screenshot 22](srn14-wk8-ass5-1.webp)
+
 
 ---
 
@@ -274,27 +273,25 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
-
+![Screenshot 23](srn14-wk8-ass5-2.webp)
 ---
 
 ### Screenshot 24 — Backend or API Evidence
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
-
+![Screenshot 24](backend-bkr-1.webp)
 ---
 
 ### Screenshot 25 — Database Reads and Writes
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![Screnshot 25](scrn-15-3.webp)
 
 ## Public Application URL
 
-**Public Application URL / DNS:** Add the working public application URL or load-balancer DNS here
+**Public Application URL / DNS:** http://book-review-public-alb-1877082255.us-east-1.elb.amazonaws.com
 
 ---
 
@@ -312,7 +309,7 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![Screenshot 26](int-alb1-1.webp)
 
 ---
 
@@ -320,7 +317,7 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+![Screenshot 27](findings3-1.webp)
 
 ---
 
@@ -328,7 +325,7 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+![Screenshot 28](28-3.webp)
 
 ---
 
@@ -367,67 +364,67 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I separated the three tiers to give each part of the application a specific responsibility. The Web Tier handles user requests, the Application Tier handles the application logic, and the Database Tier stores the data. This also improves security, scalability, and maintenance.
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+The Application Tier is private so users on the internet cannot access it directly. Only the Web Tier should communicate with it. This reduces the attack surface and adds another layer of security.
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+MySQL is private because the database should not be directly accessible from the internet. Only the Application Tier needs to communicate with it, which helps protect sensitive application and customer data
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+I used multiple Availability Zones to improve availability. If one Availability Zone has a problem, resources in another zone can continue serving the application.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+Multi-AZ is mainly about availability and failover, while a read replica is mainly used to handle read traffic and improve database performance. A read replica provides another copy of the database that can serve read requests.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+I divided the Terraform configuration into separate modules for networking, security, load balancing, and database resources. This made the infrastructure easier to understand, manage, and reuse instead of putting everything into one large main.tf file.
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+Variables allow the main Terraform configuration to pass information into a module. Outputs allow a module to return information that another module needs. For example, a network module can output subnet IDs that are then used by the load balancer or database module.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+I checked what Terraform planned to create, modify, or destroy before applying the changes. I also checked that the resources were being created in the correct subnets and that the planned infrastructure matched the architecture I designed.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+CLAUDE.md provided Claude Code with the project's instructions, architecture requirements, coding conventions, and important constraints. It gave the AI context about how I wanted the project built instead of making it work without understanding the project requirements.
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+The Terraform Engineer subagent helped with the Terraform implementation. It worked on the infrastructure configuration and modules based on the architecture and requirements, helping translate the design into Terraform code.
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+The reviewers checked whether the architecture followed the required security and three-tier design. They helped identify areas such as network exposure, private resources, security group rules, and whether the infrastructure matched the intended architecture.
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+I used Terraform MCP to give Claude access to more reliable, current Terraform and provider information. Instead of relying only on what the AI already knew, it could use the available Terraform documentation and information when working on the infrastructure.
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+The validation hooks were used as safety checks before changes could move forward. They helped catch problems in the Terraform configuration and enforce project rules before infrastructure changes were applied
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+One issue was the difficulty connecting to the internal Application Load Balancer from the application server. Claude helped me investigate the problem by checking the network path, security group rules, listener configuration, and target group connectivity instead of simply changing settings randomly
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+I reviewed Claude's infrastructure recommendations against the architecture requirements before implementing them. Where a recommendation did not fit the required security or network design, I modified it rather than accepting the AI's suggestion automatically. This helped me understand that Agentic AI is an assistant, not a replacement for my own technical judgment.
 
 ---
 
@@ -441,7 +438,7 @@ Write the post in your own words, include at least one project image or other pr
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:** https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-azuredevops-ugcPost-7506115245564862464-mEwb/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
 ---
 
