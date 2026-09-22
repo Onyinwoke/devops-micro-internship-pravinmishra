@@ -63,7 +63,7 @@ Add a screenshot showing Terraform MCP connected and available.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-![Screesnhot 5](<Screenshot 2026-09-11 223731.png>)
+![Screenshot 5](<Screenshot 2026-09-11 223731.png>)
 
 ---
 
@@ -162,7 +162,7 @@ Add a screenshot showing the private internal load balancer.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-08-26 185141.png>)
 
 ---
 

@@ -267,7 +267,8 @@ Add a screenshot of `/tf-drift-review` showing the detected difference and risk 
 
 Add a screenshot of `drift-detected-report.txt` showing your full name and the `WARN` or `FAIL` result.
 
-Add your screenshot here.
+
+![Screenshot 13](<Screenshot 2026-09-21 035030-1.png>)
 
 ## Questions
 
@@ -523,13 +524,13 @@ Suggested tags:
 
 ## LinkedIn Evidence
 
-### LinkedIn Post URL
+### https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-azuredevops-share-7507655221884510208-YfIZ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c
 
-Add your LinkedIn post URL here.
+
 
 ### Published LinkedIn Post Screenshot — Mandatory
 
-Add a screenshot of the published LinkedIn post here.
+![LinkedIn Post](<Screenshot 2026-09-22 191055.png>)
 
 ---
 
