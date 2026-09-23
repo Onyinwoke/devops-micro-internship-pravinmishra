@@ -24,7 +24,7 @@ Create the assignment workspace, initialize a Git repository, prepare the requir
 
 #### Screenshot 1 — Terminal showing the `ansible-onboarding` path, `ls -la` output, and `git status` confirming the Git repository is on the `main` branch
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-09-22 222132.png>)
 
 ---
 
@@ -38,8 +38,7 @@ Create an isolated Python virtual environment and install Ansible and the requir
 
 #### Screenshot 2 — Terminal showing the active `(.venv)` environment, `which ansible`, `ansible --version`, `ansible-lint --version`, `yamllint --version`, and `pre-commit --version`
 
-Add your screenshot here.
-
+![Screenshot 2](<Screenshot 2026-09-22 231842-1.png>) ![Screenshot 2.1](<Screenshot 2026-09-22 230452-1.png>)
 ---
 
 # Task 3 — Configure VS Code for Ansible Development
@@ -52,13 +51,13 @@ Configure Visual Studio Code to use the project’s Python virtual environment a
 
 #### Screenshot 3 — VS Code Extensions panel showing the Ansible, YAML, and Python extensions installed
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-23 000420.png>) ![Screenshot 3.1](<Screenshot 2026-09-23 000409.png>)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig` open side by side, with the required settings clearly visible
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-09-23 001003.png>)
 
 ---
 
@@ -72,13 +71,13 @@ Create a reusable `ansible.cfg` file containing the default settings that will b
 
 #### Screenshot 5 — `ansible.cfg` open in VS Code or another editor, showing the complete configuration
 
-Add your screenshot here.
+![Screesnhot 5](<Screenshot 2026-09-23 112123.png>)
 
 ---
 
 #### Screenshot 6 — Terminal showing `ansible --version` with the `ansible.cfg` path and the output of `ansible-config dump --only-changed`
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-09-23 111851-1.png>)
 
 ---
 
@@ -92,7 +91,7 @@ Prepare SSH key authentication, load the key into the SSH agent, configure reusa
 
 #### Screenshot 7 — Terminal showing `ssh-add -l` with the ED25519 key loaded and the SSH configuration verification output
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-09-23 130008.png>)
 
 ---
 
@@ -106,7 +105,7 @@ Configure your Git identity and install pre-commit hooks that validate YAML and 
 
 #### Screenshot 8 — Terminal showing your Git full name, Git email, default branch, successful `pre-commit install` output, and `.git/hooks/pre-commit`
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-09-23 130927.png>)
 
 ---
 
@@ -120,13 +119,13 @@ Verify that Ansible, the linting tools, Git hooks, SSH agent, and Git ignore rul
 
 #### Screenshot 9 — Terminal showing `pre-commit run --all-files` completing successfully
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-09-23 135726.png>)
 
 ---
 
 #### Screenshot 10 — Terminal showing `ansible --version` with the project configuration path and `ssh-add -l` with the ED25519 key loaded
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-09-23 140610.png>)
 
 ---
 
@@ -140,13 +139,14 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 #### Screenshot 11 — Terminal showing the final `ansible-onboarding` project structure
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-09-23 141421.png>)
 
 ---
 
 #### Screenshot 12 — VS Code Markdown preview showing your full name, project summary, and part of the “New Machine? Do This” checklist
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-09-23 141845.png>) 
+![Screenshot 12.1](<Screenshot 2026-09-23 141827.png>)
 
 ---
 
@@ -156,25 +156,25 @@ Answer the following in your own words:
 
 **1. What is one feature that makes your workstation setup team-friendly?**
 
-Add your answer here.
+One feature that makes my workstation team-friendly is the README.md documentation. It explains how to set up the workstation, install the required tools, configure SSH, and run the checks. This makes it easier for a new team member to follow the same setup without having to start from scratch.
 
 ---
 
 **2. What is one pitfall you avoided while completing the setup?**
 
-Add your answer here.
+One pitfall I avoided was committing my Python virtual environment and SSH private key to Git. I used .gitignore to keep these files out of version control. This keeps the repository clean and helps prevent sensitive information from being exposed.
 
 ---
 
 **3. Why should Ansible be installed inside a Python virtual environment?**
 
-Add your answer here.
+Ansible should be installed inside a Python virtual environment because it keeps Ansible and its dependencies separate from the system's Python installation. This makes it easier to manage package versions and prevents changes to the Ansible setup from affecting other Python projects on the machine.
 
 ---
 
 **4. Why must SSH private keys and `.venv/` remain outside version control?**
 
-Add your answer here.
+SSH private keys must remain outside version control because they are sensitive credentials that could be used to access servers if exposed. The .venv/ directory should also remain outside version control because it contains locally installed Python packages and can be recreated from requirements.txt. Keeping both out of Git improves security and keeps the repository clean.
 
 ---
 
