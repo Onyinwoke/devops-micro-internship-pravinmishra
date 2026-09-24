@@ -147,6 +147,7 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 ![Screenshot 12](<Screenshot 2026-09-23 141845.png>) 
 ![Screenshot 12.1](<Screenshot 2026-09-23 141827.png>)
+![Screenshot 12.2](image.png)
 
 ---
 

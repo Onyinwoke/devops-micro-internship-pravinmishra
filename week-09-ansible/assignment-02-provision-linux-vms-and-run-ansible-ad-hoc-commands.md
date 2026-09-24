@@ -24,19 +24,20 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 1 — Terminal showing the complete `ansible-adhoc-lab` project structure
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-09-23 145021.png>)
 
 ---
 
 #### Screenshot 2 — Terminal showing `git status --short` with the new project files and updated `.gitignore`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-23 223611.png>).
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I created the `ansible-adhoc-lab` project inside my existing `ansible-onboarding` repository. I separated the project into `terraform` and `ansible` directories so that Terraform can handle infrastructure provisioning while Ansible manages the Linux VMs. I also added Terraform state, plan, working-directory, and crash-log files to `.gitignore` to prevent them from being committed to Git.
+
 
 ---
 
@@ -57,25 +58,30 @@ Do not configure both providers for this assignment.
 
 #### Screenshot 3 — Terraform configuration showing the three or four server roles and the `for_each` or `count` implementation
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-24 102812.png>)
 
 ---
 
 #### Screenshot 4 — Terraform configuration showing SSH restricted to the controller IP and HTTP allowed only for web hosts
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-09-24 102837.png>)
 
 ---
 
 #### Screenshot 5 — Terraform output configuration showing how public IP addresses are associated with the server roles
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-09-24 102928.png>)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I used Terraform to prepare, validate, plan, and deploy the infrastructure for my Ansible ad-hoc lab. I ran `terraform fmt` to format the Terraform configuration, followed by `terraform fmt -check` to confirm that the files were correctly formatted. I then ran `terraform init` to initialize the AWS provider and `terraform validate` to check that the configuration was valid.
+
+After reviewing the Terraform plan, I confirmed that Terraform would create 10 resources, including the VPC, subnet, internet gateway, route table, security group, SSH key pair, and three EC2 instances for `web1`, `app1`, and `db1`. I then ran `terraform apply` to provision the infrastructure on AWS.
+
+The deployment completed successfully with 10 resources added. Terraform also provided the public IP addresses of the three servers, which I will use to create the Ansible inventory and connect to the VMs.
+
 
 ---
 
@@ -89,25 +95,25 @@ Initialize and validate the Terraform configuration, review the execution plan, 
 
 #### Screenshot 6 — Final `terraform apply` output showing `Apply complete`
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-09-24 103530.png>)
 
 ---
 
 #### Screenshot 7 — `terraform output public_ips` showing the role-to-IP mapping for all three or four VMs
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-09-24 103530-1.png>)
 
 ---
 
 #### Screenshot 8 — Azure Portal or AWS Management Console showing all three or four VMs in the `Running` state, with their role-based names visible
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-09-24 103743.png>)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I tested SSH connectivity from my WSL2 Ansible controller to the AWS EC2 instances. I successfully connected to `web1` using its public IP and verified its Linux hostname. The hostname initially showed the default AWS hostname, so I changed it to `web1` and verified the change successfully. This confirmed that SSH key authentication and network connectivity from the controller to the VM are working.
 
 ---
 
@@ -121,13 +127,14 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 #### Screenshot 9 — Terminal showing successful SSH hostname output from all VMs
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-09-24 110909.png>)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I tested SSH connectivity from my WSL2 controller to all three AWS EC2 instances using their public IP addresses and the SSH key configured in Assignment 01. I verified that each server was reachable and checked its Linux hostname using the `hostname` command. The default hostnames were changed to match their assigned roles: `web1`, `app1`, and `db1`. This confirmed that SSH authentication and network connectivity between the Ansible controller and all three managed servers are working correctly.
+
 
 ---
 
@@ -143,19 +150,22 @@ The inventory allows Ansible to run commands against all servers, or only specif
 
 #### Screenshot 10 — `inventory.ini` showing the `web`, `app`, and `db` groups
 
-Add your screenshot here.
+![Screenshot 10](<Screenshot 2026-09-24 112705.png>)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+![Screenshot 11](<Screenshot 2026-09-24 113023.png>)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I created a custom Ansible inventory with three server groups: `web`, `app`, and `db`. Each server was assigned its AWS public IP, with `ubuntu` configured as the SSH user and my Ed25519 key set for authentication.
+
+I also configured the inventory to use the `ubuntu` SSH user and the Ed25519 private key created during Assignment 01. I created a separate `ansible.cfg` inside the Assignment 02 `ansible` directory with host key checking disabled.
+
 
 ---
 
@@ -171,43 +181,46 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 12 — Output of `ansible all -i inventory.ini -m ping`
 
-Add your screenshot here.
+![Screenshot 12](<Screenshot 2026-09-24 113224.png>)
 
 ---
 
 #### Screenshot 13 — Output of `ansible all -i inventory.ini -m command -a "uptime"`
 
-Add your screenshot here.
+![Screesnhot 13](<Screenshot 2026-09-24 113801.png>)
 
 ---
 
 #### Screenshot 14 — Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![Screenshot 14](<Screenshot 2026-09-24 114140.png>)
 
 ---
 
 #### Screenshot 15 — Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-09-24 114318.png>)
 
 ---
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![Screenshot 16](<Screenshot 2026-09-24 114619.png>)
 
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-Add your screenshot here.
+![Screenshot 17](<Screenshot 2026-09-24 115300.png>)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+I ran `ansible all -i inventory.ini -m ping` and confirmed that Ansible successfully connected to all three servers, returning `pong` for `web1`, `app1`, and `db1`. This confirmed that the inventory and SSH configuration are working correctly.
+
+I used Ansible ad-hoc commands to manage and inspect the three Ubuntu servers. I verified connectivity, checked the remote user, server uptime, disk space, and memory. I installed and started Nginx on the web server, installed htop on all three servers, and confirmed that Nginx was active on web1. This demonstrated how Ansible can perform quick administrative and monitoring tasks across specific server groups without using a playbook.
+
 
 ---
 
@@ -219,13 +232,13 @@ Add your task notes here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+[LinkedIn Post](https://www.linkedin.com/posts/nwoke-onyinye_aws-terraform-ansible-ugcPost-7508845232579354625-H2m1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Image](<Screenshot 2026-09-24 121121.png>)
 
 ---
 
@@ -235,37 +248,45 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+An Ansible inventory file tells Ansible which servers it needs to manage and how to connect to them. In my project, the inventory contained the IP addresses of my three AWS servers and grouped them into web, app, and db. It also specified the SSH user and private key Ansible should use.
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+web contains web1, which I used for web-server tasks such as installing and running Nginx.
+app contains app1, which represents the application server.
+db contains db1, which represents the database server.
+
+Grouping the servers makes it possible to target a specific type of server without running the command on every server.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The Ansible ping module verifies that Ansible can successfully connect to a managed server and communicate with it. It is not checking whether the server responds to a normal network ping. In my project, receiving pong from all three servers confirmed that my SSH connection and Ansible setup were working.
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+Package installation normally requires administrator/root privileges because it changes software installed on the operating system. The ubuntu user I used does not normally have those privileges directly, so --become allows Ansible to temporarily perform the task with elevated privileges.
+
+For example, I used --become when installing Nginx and htop.
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+I would use an ad-hoc command when I need to perform a quick, one-time task or check something on a server. For example, I used ad-hoc commands to check uptime, disk space and memory, install htop, and verify that Nginx was running.
+
+For larger or repeated tasks that need to be consistent and documented, I would use a playbook instead.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+One challenge was making sure Ansible used the correct SSH key and connection details for the three AWS servers. I created a custom inventory with each server's public IP, set the SSH user to ubuntu, and specified my Ed25519 private key at ~/.ssh/id_ed25519. I then tested the connections with Ansible's ping module and received pong from all three servers, confirming that the SSH and inventory configuration was working correctly.
 
 ---
 
