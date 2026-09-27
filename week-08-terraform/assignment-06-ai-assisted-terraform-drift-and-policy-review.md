@@ -298,12 +298,11 @@ So it was not a deletion or replacement.
 
 ### 5. What did Claude recommend?
 
-Recommendation
+
 The drift review classified the change as WARN because a change is pending.
 The change is non-destructive, but it still requires human review because it changes network access to the web server.
 ### 6. Why should you review the recommendation before taking action?
 
-Write your answer here.
 AI reviews the evidence → Human reviews the recommendation → Human decides whether to apply.
 ---
 
