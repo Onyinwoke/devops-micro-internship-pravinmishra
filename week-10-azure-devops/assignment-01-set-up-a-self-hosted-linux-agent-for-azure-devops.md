@@ -30,7 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-09-26 000012-1.png>)
 
 ---
 
@@ -44,13 +44,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-28 005027.png>)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-28 005938.png>)
 
 ---
 
@@ -64,13 +64,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-09-28 015308.png>)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-09-28 020735.png>)
 
 ---
 
@@ -84,7 +84,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-09-28 021031.png>)
 
 ---
 
