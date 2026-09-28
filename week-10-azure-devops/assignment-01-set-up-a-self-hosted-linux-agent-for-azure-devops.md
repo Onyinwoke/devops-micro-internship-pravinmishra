@@ -30,7 +30,7 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-![Screenshot 1](<Screenshot 2026-09-26 000012.png>)
+Add your screenshot here.
 
 ---
 

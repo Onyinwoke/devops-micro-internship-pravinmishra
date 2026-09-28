@@ -89,7 +89,7 @@ Format and validate the Terraform configuration, review the execution plan, and 
 
 #### Screenshot 5 — Output of `terraform output public_ip` showing the VM’s public IP address
 
-Screesnhot 5
+![Screenshot 5](<Screenshot 2026-09-24 185528-1.png>)
 
 ---
 
@@ -140,7 +140,7 @@ Add the Terraform-provisioned Azure VM to the Ansible inventory and confirm that
 
 #### Screenshot 7 — Ansible ping output showing `SUCCESS` and `pong` from the Azure VM
 
-![Screesnhot 7](<Screenshot 2026-09-24 205216.png>)
+![Screenshot 7](<Screenshot 2026-09-24 205216.png>)
 
 ---
 
@@ -155,7 +155,7 @@ mini-finance ansible_host=13.49.74.135
 [web:vars]
 ansible_user=ubuntu
 ansible_ssh_private_key_file=/home/onyinw/.ssh/id_ed25519
-```
+
 
 ---
 
@@ -175,9 +175,9 @@ Screenshot must show:
 - Installation of `nginx`, `git`, and `rsync`
 - Nginx service configured as started and enabled
 - Beginning of Play 2 with the Git repository URL and synchronization task
-![Screenshot 8](<Screenshot 2026-09-24 222014.png>)
-![Screenshot 8.1](<Screenshot 2026-09-24 222029.png>)
 
+![Screenshot 8](<Screenshot 2026-09-24 222029-2.png>)
+![Screenshot 8.1](<Screenshot 2026-09-24 222519-1.png>)
 ---
 
 #### Screenshot 9 — `site.yml` showing the deployment destination, handler, and Play 3 verification
@@ -279,7 +279,7 @@ Copy and paste the complete contents of your `ansible/site.yml` file below:
         success_msg: "{{ item.item }} returned HTTP {{ item.status }}"
         fail_msg: "{{ item.item }} did not return HTTP 200"
       loop: "{{ website_checks.results }}"
-```
+
 
 ---
 
@@ -293,7 +293,7 @@ Validate the syntax of the multi-play Ansible playbook and run it to install Ngi
 
 #### Screenshot 10 — Successful playbook syntax check showing `playbook: site.yml`
 
-![Screesnhot 10](<Screenshot 2026-09-24 205938.png>)
+![Screenshot 10](<Screenshot 2026-09-24 205938.png>)
 
 ---
 
@@ -336,9 +336,9 @@ Confirm that the Mini Finance website is publicly accessible through the Azure V
 
 Add your deployed website URL below:
 
-```text
+text
 http://13.49.0.9/
-```
+
 
 ---
 
@@ -510,7 +510,6 @@ After completing the assignment, the AWS resources can be removed with:
 terraform destroy
 ```
 
-```
 
 ---
 
