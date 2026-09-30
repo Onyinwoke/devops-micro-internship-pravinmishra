@@ -98,7 +98,7 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-09-29 021619.png>)
 
 ---
 
@@ -106,7 +106,17 @@ Add your screenshot here.
 
 Note the cloud platform used, your Azure DevOps organization/project name, and the agent pool name. Describe any issue you faced and how you resolved it.
 
-Write your answer here.
+**Cloud platform used:** AWS (EC2 with Ubuntu Server 22.04 LTS)
+
+**Azure DevOps organization:** `onyinyenwoke`
+
+**Azure DevOps project:** `onyinye-devops-lab`
+
+**Agent pool:** `SelfHostedPool`
+
+**Issue faced and resolution:**
+The first time I configured the Azure DevOps agent, it was accidentally registered in the `Default` agent pool instead of `SelfHostedPool`. As a result, Azure DevOps showed no available agent in `SelfHostedPool`. I stopped and uninstalled the agent service, removed the old agent registration, and then configured the agent again using `SelfHostedPool`. After reinstalling and starting the service, the agent appeared as **Online** in Azure DevOps and successfully ran the test pipeline on my AWS Ubuntu VM.
+
 
 ---
 
