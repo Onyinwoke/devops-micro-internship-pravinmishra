@@ -54,7 +54,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-![Screenshot 4](<Screenshot 2026-09-30 123924.png>)
+![Screenshot 4](<Screenshot 2026-10-01 160107.png>)
 
 ---
 

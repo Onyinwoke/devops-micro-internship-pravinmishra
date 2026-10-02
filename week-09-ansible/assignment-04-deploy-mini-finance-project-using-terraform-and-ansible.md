@@ -519,7 +519,7 @@ terraform destroy
 
 #### Screenshot 15 — Published LinkedIn post showing the text and at least one deployment screenshot
 
-Add your screenshot here.
+![Screenshot 15](<Screenshot 2026-10-01 211000-1.png>)
 
 ---
 
