@@ -68,7 +68,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-02 061319.png>)
 
 ---
 
@@ -82,13 +82,14 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-10-02 205630.png>)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-10-02 204449.png>)
+![alt text](<Screenshot 2026-10-02 212331.png>)
 
 ---
 
@@ -96,7 +97,12 @@ Add your screenshot here.
 
 Include the VM public URL. Describe any issue you faced and how you fixed it (e.g. parallelism/agent-pool issues).
 
-Write your answer here.
+The VM public URL is **http://18.206.148.66**.
+
+One issue I faced was an Azure DevOps agent-pool authorization error. The pipeline initially reported that the **SelfHostedPool** did not exist or had not been authorized for use. I resolved this by authorizing the pipeline to use the **SelfHostedPool** and configuring the self-hosted agent, **static-site-web-agent**, correctly.
+
+I also had an issue after the AWS EC2 VM was restarted because its public IP address changed. I updated the Azure DevOps SSH service connection from the old IP address to **18.206.148.66**. After this, the pipeline connected successfully, copied the website files, reloaded Nginx, and the DMI website became accessible through the VM public URL.
+
 
 ---
 

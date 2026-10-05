@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-10-02 233337.png>)
 
 ---
 
@@ -34,13 +34,15 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-30 112529.png>)
+
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-09-30 121806.png>)
+
 
 ---
 
@@ -54,7 +56,8 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-10-01 160107.png>)
+
 
 ---
 
@@ -68,7 +71,7 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-04 171746.png>) ![Screenshot 5](<Screenshot 2026-10-04 171734.png>) ![Screenshot 5](<Screenshot 2026-10-04 171719.png>) ![Screenshot 5](<Screenshot 2026-10-04 171636.png>)
 
 ---
 
