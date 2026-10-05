@@ -85,19 +85,19 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-10-05 114353.png>)
 
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-Add your screenshot here.
+![Screesnhot 7](<Screenshot 2026-10-05 114519.png>)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-10-05 114618.png>)
 
 ---
 
@@ -113,13 +113,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/nwoke-onyinye_devops-azuredevops-aws-share-7512827678647898114-vA17/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-10-05 115605.png>)
 
 ---
 
