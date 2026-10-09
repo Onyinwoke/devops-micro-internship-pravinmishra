@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-09-30 010640-1.png>)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-09-30 123924-1.png>)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-10-06 234152-1.png>)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-10-06 234252-1.png>)
 
 ---
 
@@ -136,15 +136,16 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-02 204449-1.png>)
+![Screenshot 5.1](<Screenshot 2026-10-02 212331-1.png>)
 
 ## Final Website URL
 
-`http://<target-vm-public-ip>`
+`http://18.206.148.66`
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+http://18.206.148.66
 
 ---
 
@@ -152,7 +153,9 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+### CI/CD Workflow
+
+I created a pipeline in Azure DevOps to automatically deploy my website to an Azure virtual machine. When I made changes to the website and pushed them to my Git repository, the pipeline was triggered. The Azure DevOps agent then ran the deployment steps, and Ansible helped update the website on the VM. Nginx served the updated website, so I could check the changes in my browser without having to update the server manually.
 
 ---
 
@@ -167,11 +170,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-10-06 235958-1.png>)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+[https://www.linkedin.com/posts/nwoke-onyinye_dmibypravinmishra-agenticai-azuredevops-ugcPost-7513372330291609600-lDPU/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c]
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 

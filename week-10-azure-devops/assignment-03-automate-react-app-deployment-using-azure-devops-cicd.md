@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-10-02 233337-1.png>)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-10-04 171636-1.png>)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-10-05 114353-1.png>)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-10-05 114519-1.png>)
 
 ---
 
@@ -143,15 +143,15 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-05 114618-1.png>)
 
 ## Final Application URL
 
-`http://<vm-public-ip>`
+`http://32.198.116.111`
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+[http://32.198.116.111]
 
 ---
 
@@ -159,7 +159,9 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+### CI/CD Workflow
+
+I created an Azure DevOps pipeline to automatically deploy my React application to a server. When I made changes to the React app and pushed them to Git, Azure DevOps started the pipeline. The pipeline installed the required dependencies and built the React application. Ansible was then used to deploy the updated files to the server, where Nginx served the application. This meant I did not have to manually copy the files to the server every time I made a change.
 
 ---
 
@@ -174,11 +176,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-10-05 115605-1.png>)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+[https://www.linkedin.com/posts/nwoke-onyinye_devops-azuredevops-aws-share-7512827678647898114-vA17/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c]
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 

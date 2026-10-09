@@ -20,7 +20,7 @@ Prepare `infra-epicbook` (Terraform for network, frontend/backend VMs, MySQL, wi
 
 #### Screenshot 1 — Both repositories showing their required files and separation of responsibilities
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-10-08 013900.png>) ![Screenshot 1.1](<Screenshot 2026-10-08 013512.png>)
 
 ---
 

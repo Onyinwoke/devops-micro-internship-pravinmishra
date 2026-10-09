@@ -59,7 +59,10 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-When a user in any part of the world visits the EpicReads website hosted in Finland, the information is divided into small pieces called packets. Packet switching allows these packets to travel across different networks and routes before reaching the destination. The website server has an IP address that identifies its location on the internet. TCP/IP provides the rules that allow the user's device and the server to communicate and ensure data is delivered correctly. HTTP or HTTPS is used to transfer web pages and other website content between the user's browser and the server. HTTPS is preferred because it encrypts the communication, helping protect users' information while they browse and purchase books from EpicReads.
+When a user in any part of the world visits the EpicReads website hosted in Finland, the information is divided into small pieces called packets. Packet switching allows these packets to travel across different networks and routes before reaching the destination. 
+The website server has an IP address that identifies its location on the internet. 
+TCP/IP provides the rules that allow the user's device and the server to communicate and ensure data is delivered correctly. 
+HTTP or HTTPS is used to transfer web pages and other website content between the user's browser and the server. HTTPS is preferred because it encrypts the communication, helping protect users' information while they browse and purchase books from EpicReads.
 
 ---
 
@@ -144,7 +147,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-DNS, or Domain Name System, is like the internet's phonebook. It translates an easy-to-remember domain name such as epicreads.com into the server's IP address, 52.172.142.222, so users can access the website without remembering the numerical IP address. An A record should be used because it connects a domain name directly to an IPv4 address. Therefore, the A record would point epicreads.com to 52.172.142.222, allowing users to reach the EpicReads website by entering the domain name in their browser.
+DNS, or Domain Name System, is like the internet's phonebook. It translates an easy to remember domain name such as epicreads.com into the server's IP address, 52.172.142.222, so users can access the website without remembering the numerical IP address. An A record should be used because it connects a domain name directly to an IPv4 address. Therefore, the A record would point epicreads.com to 52.172.142.222, allowing users to reach the EpicReads website by entering the domain name in their browser.
 
 ---
 
