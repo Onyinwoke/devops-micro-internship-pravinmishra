@@ -151,7 +151,7 @@ Add a browser screenshot showing:
 
 Replace the placeholder and paste your final application URL below:
 
-[http://32.198.116.111]
+http://32.198.116.111
 
 ---
 

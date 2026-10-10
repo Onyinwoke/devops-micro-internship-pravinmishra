@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-![Screenshot 1](<Screenshot 2026-09-30 010640-1.png>)
+![Screenshot 1](Screenshot%202026-09-30%20010640-1.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-![Screenshot 2](<Screenshot 2026-09-30 123924-1.png>)
+![Screenshot 2](Screenshot%202026-09-30%20123924-1.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-![Screenshot 3](<Screenshot 2026-10-06 234152-1.png>)
+![Screenshot 3](Screenshot%202026-10-06%20234152-1.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-![Screenshot 4](<Screenshot 2026-10-06 234252-1.png>)
+![Screenshot 4](Screenshot%202026-10-06%20234252-1.png)
 
 ---
 
@@ -136,12 +136,13 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-![Screenshot 5](<Screenshot 2026-10-02 204449-1.png>)
-![Screenshot 5.1](<Screenshot 2026-10-02 212331-1.png>)
+![Screenshot 5](Screenshot%202026-10-02%20204449-1.png)
+![Screenshot 5.1](Screenshot%202026-10-02%20212331-1.png)
 
 ## Final Website URL
 
-`http://18.206.148.66`
+`http://18.206.148.66`   
+
 
 Replace the placeholder with your actual website URL:
 
@@ -170,7 +171,7 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-![LinkedIn Post](<Screenshot 2026-10-06 235958-1.png>)
+![LinkedIn Post](Screenshot%202026-10-06%20235958-1.png)
 
 ## LinkedIn Post URL
 
