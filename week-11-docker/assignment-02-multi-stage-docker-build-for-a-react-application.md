@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-10-26 124306.png>)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-10-26 234743.png>)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-10-26 140511.png>)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-10-26 234946.png>)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-26 140511-1.png>)
 
 ---
 
@@ -74,7 +74,16 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-10-26 235354.png>)
+
+Using the reported disk usage:
+Single-stage image: 2,170 MB (approximately)
+Multi-stage image: 95.1 MB
+Space saved: 2,170 − 95.1 = 2,074.9 MB
+The approximate percentage reduction is:
+
+{2170-95.1}{2170}\x100
+95.6%
 
 ---
 
@@ -88,7 +97,7 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-10-27 005413.png>)
 
 ---
 
@@ -96,7 +105,7 @@ Add your screenshot here.
 
 Write your analysis here.
 
-Write your answer here.
+The single-stage Docker image (`react-app:single`) had a content size of 505 MB, while the multi-stage image (`react-app:multistage`) was 26.6 MB, representing a **94.7% reduction** in image size. Multi-stage builds keep the Node.js build environment and unnecessary development tools out of the final production image. This improves security by reducing the number of packages that could contain vulnerabilities. Fewer installed tools and dependencies also reduce the container's attack surface. Smaller images require less data to transfer from a container registry, improving image pull times and potentially speeding up deployments. For build caching, I copied `package*.json` before the application source code and ran `npm ci` first, allowing Docker to reuse the dependency-installation layer when only source files change.
 
 ---
 
@@ -122,13 +131,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/nwoke-onyinye_docker-devops-cloudengineering-ugcPost-7520637072546877440-RaUD/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-10-27 010742.png>)
 
 ---
 

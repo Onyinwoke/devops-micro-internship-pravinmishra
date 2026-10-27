@@ -20,7 +20,8 @@ Provision an Ubuntu VM on AWS or Azure with a public IP and Security Group/NSG r
 
 #### Screenshot 1 — Cloud VM overview page showing the running VM, public IP, and security rules
 
-Add your screenshot here.
+![Screenshot 1](<Screenshot 2026-10-25 231114.png>)
+![Screenshot 1.1](<Screenshot 2026-10-25 232907.png>)
 
 ---
 
@@ -34,7 +35,7 @@ Configure User Data (AWS) or Custom Data (Azure) to automatically install Docker
 
 #### Screenshot 2 — Output of `cat /var/log/cloud-init-output.log` showing Docker installation activity
 
-Add your screenshot here.
+![Screenshot 2](<Screenshot 2026-10-26 054620.png>)
 
 ---
 
@@ -48,7 +49,7 @@ Connect via SSH and confirm Docker is installed and running.
 
 #### Screenshot 3 — Terminal showing `docker --version` and `docker ps`
 
-Add your screenshot here.
+![Screenshot 3](<Screenshot 2026-10-26 054705.png>)
 
 ---
 
@@ -62,7 +63,7 @@ Clone `https://github.com/pravinmishraaws/Azure-Static-Website.git` and verify t
 
 #### Screenshot 4 — Terminal showing the project directory contents
 
-Add your screenshot here.
+![Screenshot 4](<Screenshot 2026-10-26 055908.png>)
 
 ---
 
@@ -76,7 +77,7 @@ Create a Dockerfile that serves the static site with `nginx:alpine`.
 
 #### Screenshot 5 — Dockerfile contents
 
-Add your screenshot here.
+![Screenshot 5](<Screenshot 2026-10-26 060154.png>)
 
 ---
 
@@ -90,7 +91,7 @@ Build the image tagged `static-site:latest`.
 
 #### Screenshot 6 — Terminal showing `docker images` with the `static-site:latest` image
 
-Add your screenshot here.
+![Screenshot 6](<Screenshot 2026-10-26 060419.png>)
 
 ---
 
@@ -104,7 +105,7 @@ Run the container mapping port 80, named `static-site`.
 
 #### Screenshot 7 — Terminal showing `docker ps` displaying the running container
 
-Add your screenshot here.
+![Screenshot 7](<Screenshot 2026-10-26 060508.png>)
 
 ---
 
@@ -118,13 +119,13 @@ Confirm the site is accessible through the VM's public IP in a browser.
 
 #### Screenshot 8 — Terminal showing the Public IP
 
-Add your screenshot here.
+![Screenshot 8](<Screenshot 2026-10-26 060714.png>)
 
 ---
 
 #### Screenshot 9 — Browser displaying the deployed website
 
-Add your screenshot here.
+![Screenshot 9](<Screenshot 2026-10-26 060808.png>)
 
 ---
 
@@ -140,13 +141,13 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/nwoke-onyinye_terraform-aws-docker-ugcPost-7520353930623590400-qlNJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAo3AmwBML7hksPwy4zQreoUkgXVNBf9D1c`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post](<Screenshot 2026-10-26 062218.png>)
 
 ---
 
