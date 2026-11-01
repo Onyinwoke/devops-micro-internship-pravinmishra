@@ -130,7 +130,12 @@ Apply the recommended fix yourself, push it, confirm the pipeline succeeds again
 
 Explain, in your own words, why the skill was allowed to gather evidence and diagnose the failure but was never allowed to re-trigger the pipeline or apply the fix itself.
 
-Add your answer here
+The triage skill is kept strictly read-only to ensure human-in-the-loop safety for four main reasons:
+
+Prevents Damaging "Retry Loops" If the AI makes a wrong guess, edits a file, and reruns the pipeline, it could trigger a continuous loop of broken builds. That wastes CI/CD minutes and clutters the Git history with bad commits.
+Protects Live Cloud Infrastructure Pipelines connect directly to AWS with real deployment permissions. Letting an AI trigger runs without approval creates a serious risk of accidentally modifying live databases, security settings, or servers.
+AI Recommends, Humans Decide AI models are great at finding needles in haystacks—like spotting an unclosed bracket or indentation error in seconds. But an AI doesn’t know the broader business context, upcoming releases, or team rules. A human engineer must always review the diagnosis before applying a change.
+Accountability and Clear Audit Trails In any engineering team, every code change and deployment must trace back to a specific person who verified it. If an automated tool makes live changes on its own, it breaks the audit trail.
 
 ---
 
