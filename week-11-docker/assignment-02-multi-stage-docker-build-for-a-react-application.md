@@ -1,6 +1,6 @@
 # Assignment 2 — Multi-Stage Docker Build for a React Application
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -8,19 +8,29 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 In this assignment, you will build both a single-stage and an optimized multi-stage Docker image for a React application, compare the resulting image sizes, and deploy the optimized version using a production-ready Nginx runtime container.
 
+Complete this assignment locally on your own computer where Docker is installed and running.
+
 ---
 
 # Task 1 — Prepare the Project
 
 ## Goal
 
-Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.dockerignore` excluding `node_modules`, `build`, and `.env`.
+Prepare the React application for Docker image creation.
 
 ### Evidence
 
-#### Screenshot 1 — Contents of the `.dockerignore` file
+#### Screenshot 1 — Contents of the `.dockerignore` File
 
-![Screenshot 1](<Screenshot 2026-10-26 124306.png>)
+Add a screenshot of the terminal showing:
+
+```bash
+cat .dockerignore
+```
+
+The file must exclude `node_modules`, `build`, and `.env`.
+
+![Screenshot 1](<Screenshot 2026-10-26 124306-1.png>)
 
 ---
 
@@ -28,19 +38,29 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 ## Goal
 
-Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
+Create a baseline single-stage Docker image and run the application on port 3000.
 
 ### Evidence
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-![Screenshot 2](<Screenshot 2026-10-26 234743.png>)
+Add a screenshot showing the completed `Dockerfile.single`.
+
+![Screenshot 2](<Screenshot 2026-10-26 234743-1.png>)
 
 ---
 
-#### Screenshot 3 — Browser displaying the application running from the single-stage container
+#### Screenshot 3 — Single-Stage Application in Browser
 
-![Screenshot 3](<Screenshot 2026-10-26 140511.png>)
+Add a screenshot of the browser showing the application at:
+
+```text
+http://localhost:3000
+```
+
+Ensure that your full name is visible in the application.
+
+![Screenshot 3](<Screenshot 2026-10-26 140511-2.png>)
 
 ---
 
@@ -48,19 +68,29 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 ## Goal
 
-Create a multi-stage Dockerfile with separate build and Nginx runtime stages, build `react-multistage`, and run it on port 80.
+Create an optimized multi-stage Docker image with separate builder and Nginx runtime stages, then run the application on port 80.
 
 ### Evidence
 
-#### Screenshot 4 — Contents of the multi-stage Dockerfile
+#### Screenshot 4 — Contents of the Multi-Stage Dockerfile
 
-![Screenshot 4](<Screenshot 2026-10-26 234946.png>)
+Add a screenshot showing the completed multi-stage `Dockerfile`.
+
+![Screenshot 4](<Screenshot 2026-10-26 234946-1.png>)
 
 ---
 
-#### Screenshot 5 — Browser displaying the application running from the multi-stage container
+#### Screenshot 5 — Multi-Stage Application in Browser
 
-![Screenshot 5](<Screenshot 2026-10-26 140511-1.png>)
+Add a screenshot of the browser showing the application at:
+
+```text
+http://localhost
+```
+
+Ensure that your full name is visible in the application.
+
+![Screenshot 5](<Screenshot 2026-07-15 012335.png>)
 
 ---
 
@@ -72,18 +102,41 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 ### Evidence
 
-#### Screenshot 6 — Docker image list showing both image sizes
+#### Screenshot 6 — Docker Image Size Comparison
 
-![Screenshot 6](<Screenshot 2026-10-26 235354.png>)
+Add a screenshot of the terminal showing:
 
-Using the reported disk usage:
-Single-stage image: 2,170 MB (approximately)
-Multi-stage image: 95.1 MB
-Space saved: 2,170 − 95.1 = 2,074.9 MB
-The approximate percentage reduction is:
+```bash
+docker images
+```
 
-{2170-95.1}{2170}\x100
-95.6%
+The output must include both:
+
+```text
+react-single:latest
+react-multistage:latest
+```
+
+![Screenshot 6](<Screenshot 2026-10-26 235354-1.png>)
+
+---
+
+### Percentage Reduction Calculation
+
+Record the image sizes and calculate the reduction using the same unit for both images.
+
+```text
+Single-stage image size: 505 MB
+
+Multi-stage image size: 26.6 MB
+
+Percentage reduction =
+((Single-stage image size − Multi-stage image size)
+÷ Single-stage image size) × 100
+
+Percentage reduction: \[{505-26.6}{505}\times100 
+approx 94.7%]
+```
 
 ---
 
@@ -91,21 +144,20 @@ The approximate percentage reduction is:
 
 ## Goal
 
-Write a 5–8 line analysis covering the percentage reduction, security benefits, reduced attack surface, faster distribution, and one build-caching optimization used.
-
-### Evidence
-
-#### Screenshot 7 — Analysis included in your submission document
-
-![Screenshot 7](<Screenshot 2026-10-27 005413.png>)
-
----
+Evaluate the advantages of using multi-stage Docker builds.
 
 ### Notes
 
-Write your analysis here.
+Write a short analysis of 5–8 lines covering:
 
-The single-stage Docker image (`react-app:single`) had a content size of 505 MB, while the multi-stage image (`react-app:multistage`) was 26.6 MB, representing a **94.7% reduction** in image size. Multi-stage builds keep the Node.js build environment and unnecessary development tools out of the final production image. This improves security by reducing the number of packages that could contain vulnerabilities. Fewer installed tools and dependencies also reduce the container's attack surface. Smaller images require less data to transfer from a container registry, improving image pull times and potentially speeding up deployments. For build caching, I copied `package*.json` before the application source code and ran `npm ci` first, allowing Docker to reuse the dependency-installation layer when only source files change.
+- The single-stage and multi-stage image sizes
+- The percentage reduction in image size
+- Security benefits of the smaller runtime image
+- How a smaller runtime image reduces the attack surface
+- How smaller images improve image pull and deployment speed
+- One Docker build-caching optimization you used
+
+The single-stage Docker image (`react-app:single`) was 505 MB, while the original multi-stage image (`react-app:multistage`) had a content size of 26.6 MB, representing a 94.7% reduction. The multi-stage build keeps the Node.js build environment and development dependencies out of the final production image. This smaller runtime image can improve security by reducing the number of packages and tools that may contain vulnerabilities. It also transfers less data during image pulls, potentially speeding up deployments and scaling. For build caching, I copied `package*.json` before the application source code and ran `npm ci` first, allowing Docker to reuse the dependency layer when only source files change.
 
 ---
 
@@ -113,19 +165,28 @@ The single-stage Docker image (`react-app:single`) had a content size of 505 MB,
 
 ## Goal
 
-Optionally configure an Nginx health check, cache headers, parameterized ports via environment variables, or a lighter runtime image, and compare results.
+Explore one or more additional production optimization techniques.
 
-> Screenshot optional.
+### Optional Work
+
+You may choose to:
+
+- Configure an Nginx health check
+- Configure cache headers for static assets
+- Experiment with a lighter runtime image
+- Compare the resulting image size with your original multi-stage image
+
+Screenshots are optional.
 
 ---
 
-# LinkedIn Post (Optional)
+# LinkedIn Requirement
 
 ## Goal
 
-Create a LinkedIn post describing what you built, what a multi-stage Docker build is, the image size reduction achieved, and key learnings.
+Create a LinkedIn post describing what you built, what a multi-stage Docker build is, the image-size reduction achieved, and key learnings from the assignment.
 
-## Evidence
+### Evidence
 
 #### LinkedIn Post URL
 
@@ -135,29 +196,45 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### LinkedIn Post Screenshot
 
-![LinkedIn Post](<Screenshot 2026-10-27 010742.png>)
+![LinkedIn Post](<Screenshot 2026-10-27 010742-1.png>)
 
 ---
 
 # Submission Instructions
 
-- Add all required screenshots in your submission
-- Full name must be visible in required screenshots
-- Do not expose sensitive information
+- Complete all required tasks in sequence.
+- Include Screenshots 1–6 exactly as specified.
+- Include the percentage-reduction calculation and Task 5 analysis.
+- Include the LinkedIn post URL and screenshot.
+- Ensure that your full name is visible in all required screenshots.
+- Do not expose passwords, keys, tokens, account IDs, or other sensitive information.
 
 ---
 
 # Completion Checklist
 
-- [ ] Task 1: `.dockerignore` created (Screenshot 1)
-- [ ] Task 2: Single-stage image built and verified (Screenshots 2–3)
-- [ ] Task 3: Multi-stage image built and verified (Screenshots 4–5)
-- [ ] Task 4: Image sizes compared (Screenshot 6)
-- [ ] Task 5: Analysis written (Screenshot 7 & Notes)
-- [ ] Task 6: Optional production optimizations explored
+- [ ] Assignment completed locally
+- [ ] `.dockerignore` created and verified (Screenshot 1)
+- [ ] `Dockerfile.single` created (Screenshot 2)
+- [ ] Single-stage container verified in the browser (Screenshot 3)
+- [ ] Multi-stage `Dockerfile` created (Screenshot 4)
+- [ ] Multi-stage container verified in the browser (Screenshot 5)
+- [ ] Both Docker image sizes captured (Screenshot 6)
+- [ ] Percentage reduction calculated
+- [ ] Optimization analysis completed
+- [ ] LinkedIn post URL and screenshot included
+- [ ] Full name visible in all required screenshots
 - [ ] No sensitive information exposed
+
+---
+
+## About DMI & CloudAdvisory
+
+DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory), focused on real-world execution, systems thinking, and career readiness.
+
+It helps learners build strong DevOps foundations through hands-on experience.
 
 ---
 
@@ -181,4 +258,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

@@ -103,7 +103,7 @@ During the backend role deployment, the application failed to start (ERR_CONNECT
 
 Sequelize Dialect & Environment Mapping: In production mode, Sequelize expected the database connection string via JAWSDB_URL. This was resolved by templating an explicit config.json with host, port, dialect, and credentials, while simultaneously providing a formatted JAWSDB_URL string in .env.
 
-Database Authentication Mismatch: Backend service encountered an ER_ACCESS_DENIED_ERROR (1045) because the master user credentials required synchronization between the Azure DevOps variable group and the AWS RDS MySQL instance. The RDS instance master password was synchronized to EpicbookSecure2026#, the initial schema (BuyTheBook_Schema.sql) and seed data (author_seed.sql, books_seed.sql) were loaded into the bookstore database, and the Ansible backend role was re-executed, bringing epicbook.service to active (running).
+Database Authentication Mismatch: Backend service encountered an ER_ACCESS_DENIED_ERROR (1045) because the master user credentials required synchronization between the Azure DevOps variable group and the AWS RDS MySQL instance. The RDS instance master password was synchronized to EpicbookSecure2026#, the initial schema (BuyTheBook_Schema.sql) and seed data (author_seed.sql, books_seed.sql) were loaded into the bookstore database, and the Ansible backend role was re-executed, bringing epicbook.service to active.
 
 # LinkedIn Post (Required)
 
