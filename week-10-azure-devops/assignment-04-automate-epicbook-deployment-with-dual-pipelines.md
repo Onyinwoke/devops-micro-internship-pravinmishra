@@ -34,7 +34,7 @@ Create and validate an Azure Resource Manager SPN service connection (Tenant ID,
 
 #### Screenshot 2 — Azure Resource Manager service connection showing successful configuration with secrets hidden
 
-Add your screenshot here.
+
 ![Screenshot 2](<Screenshot 2026-10-06 234000-2.png>)
 ---
 
